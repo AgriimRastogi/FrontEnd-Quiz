@@ -2,2541 +2,2041 @@
   {
     "id": 1,
     "topic": "HTML",
-    "difficulty": "moderate",
-    "question": "Which HTML element is most semantically appropriate for wrapping a site logo that also links back to the homepage?",
-    "options": [
-      "<div><img src='logo.png'></div>",
-      "<span><img src='logo.png'></span>",
-      "<a href='/'><img src='logo.png' alt='Site logo'></a>",
-      "<header><img src='logo.png'></header>"
-    ],
-    "answerIndex": 2,
-    "answerText": "<a href='/'><img src='logo.png' alt='Site logo'></a>",
-    "explanation": "The logo is interactive (clickable) and navigates home, so it should be an <a> element. The image must have an alt attribute for accessibility. <div> or <span> add no semantics, and <header> alone doesn’t make the logo a link."
+    "difficulty": "easy",
+    "question": "What is the correct tag for inserting an image in HTML?",
+    "options": ["<image>", "<img>", "<src>", "<picture>"],
+    "answerIndex": 1,
+    "answerText": "<img>",
+    "explanation": "<img> is the standard self-closing HTML tag used to embed images."
   },
   {
     "id": 2,
-    "topic": "HTML",
-    "difficulty": "moderate",
-    "question": "Which of the following BEST describes the purpose of the <main> element?",
-    "options": [
-      "To contain the entire layout including header and footer",
-      "To wrap repeated navigation links",
-      "To represent the dominant content of the <body> that is unique to the page",
-      "To hold all JavaScript-powered interactive widgets"
-    ],
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Which CSS property changes text color?",
+    "options": ["font-style", "text-color", "color", "text-style"],
     "answerIndex": 2,
-    "answerText": "To represent the dominant content of the <body> that is unique to the page",
-    "explanation": "<main> is meant for the primary unique content of the document. It should exclude repeated content like headers, footers, and navigation sections."
+    "answerText": "color",
+    "explanation": "color defines the foreground color of text."
   },
   {
     "id": 3,
-    "topic": "HTML",
-    "difficulty": "moderate",
-    "question": "In a document using <nav>, <header>, <main>, and <footer>, how many <main> elements should there be for correct semantics?",
-    "options": [
-      "One or more <main> per section",
-      "Exactly one <main> per page",
-      "At most one <main> per <section>",
-      "It doesn’t matter; the browser will handle it"
-    ],
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Which keyword declares a variable in JavaScript?",
+    "options": ["int", "var", "val", "new"],
     "answerIndex": 1,
-    "answerText": "Exactly one <main> per page",
-    "explanation": "There should be exactly one <main> element in a document representing the main content of the page. Multiple <main> elements break semantics and can confuse assistive technologies."
+    "answerText": "var",
+    "explanation": "var, let, and const declare variables; var is the oldest keyword."
   },
   {
     "id": 4,
     "topic": "HTML",
-    "difficulty": "moderate",
-    "question": "Which attribute combination is MOST appropriate for a required email field in a form?",
-    "options": [
-      "<input type='text' name='email'>",
-      "<input type='email' name='email' required>",
-      "<input type='email' name='email' placeholder='Email'>",
-      "<input type='text' name='email' required>"
-    ],
-    "answerIndex": 1,
-    "answerText": "<input type='email' name='email' required>",
-    "explanation": "type='email' gives built-in validation and appropriate keyboard on mobile. The required attribute makes it mandatory. Placeholder alone is not a substitute for validation or requirement."
+    "difficulty": "easy",
+    "question": "Which tag defines the largest heading?",
+    "options": ["<h3>", "<h6>", "<h1>", "<h5>"],
+    "answerIndex": 2,
+    "answerText": "<h1>",
+    "explanation": "Heading levels decrease as numbers increase; <h1> is the highest priority."
   },
   {
     "id": 5,
-    "topic": "HTML",
-    "difficulty": "moderate",
-    "question": "Which HTML element is the MOST semantic choice for marking up a block of text that is tangentially related to the main content (like a sidebar note)?",
-    "options": [
-      "<section>",
-      "<aside>",
-      "<article>",
-      "<div>"
-    ],
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Which CSS property controls background color?",
+    "options": ["bgcolor", "background-color", "color", "theme"],
     "answerIndex": 1,
-    "answerText": "<aside>",
-    "explanation": "<aside> is specifically meant for content indirectly related to the main content, such as sidebars or additional notes. <div> is generic with no meaning, and <section> or <article> aren’t specifically for tangential content."
+    "answerText": "background-color",
+    "explanation": "background-color fills the background with a specified color."
   },
   {
     "id": 6,
-    "topic": "HTML",
-    "difficulty": "moderate",
-    "question": "You have a <button> inside a <form>. Which attribute on the button will submit the form by default if multiple buttons exist?",
-    "options": [
-      "type='button'",
-      "type='submit'",
-      "type='reset'",
-      "No attribute needed; all buttons submit"
-    ],
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "What is console.log(2+3)?",
+    "options": ["23", "5", "undefined", "NaN"],
     "answerIndex": 1,
-    "answerText": "type='submit'",
-    "explanation": "Only a button with type='submit' will submit the form. type='button' does nothing by default, and type='reset' resets the form fields."
+    "answerText": "5",
+    "explanation": "2+3 is numeric addition, result is 5."
   },
   {
     "id": 7,
-    "topic": "HTML",
-    "difficulty": "advanced",
-    "question": "Which ARIA attribute is MOST appropriate to label an icon-only button that opens a navigation menu?",
-    "options": [
-      "aria-hidden='true'",
-      "role='button'",
-      "aria-label='Open navigation menu'",
-      "aria-expanded='true'"
-    ],
-    "answerIndex": 2,
-    "answerText": "aria-label='Open navigation menu'",
-    "explanation": "An icon-only button needs a textual label for screen readers. aria-label supplies this. aria-expanded reflects state (true/false). aria-hidden would hide the element from assistive tech, which is wrong here."
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Which symbol is used to target IDs in CSS?",
+    "options": ["#", ".", ":", "$"],
+    "answerIndex": 0,
+    "answerText": "#",
+    "explanation": "# selects elements by ID."
   },
   {
     "id": 8,
     "topic": "HTML",
-    "difficulty": "moderate",
-    "question": "Which meta tag is MOST important for proper mobile scaling and responsive layout?",
-    "options": [
-      "<meta name='viewport' content='width=device-width, initial-scale=1.0'>",
-      "<meta name='mobile' content='true'>",
-      "<meta charset='UTF-8'>",
-      "<meta name='device-width' content='responsive'>"
-    ],
+    "difficulty": "easy",
+    "question": "Which attribute gives alternative text for images?",
+    "options": ["alt", "title", "name", "desc"],
     "answerIndex": 0,
-    "answerText": "<meta name='viewport' content='width=device-width, initial-scale=1.0'>",
-    "explanation": "The viewport meta tag controls how the page scales on mobile devices. Without it, the layout may appear zoomed out and non-responsive even with proper CSS."
+    "answerText": "alt",
+    "explanation": "alt text improves accessibility and appears if image fails to load."
   },
   {
     "id": 9,
-    "topic": "HTML",
-    "difficulty": "moderate",
-    "question": "Which is the most semantic markup for a list of navigation links?",
-    "options": [
-      "<nav><div><a href='#'>Home</a><a href='#'>About</a></div></nav>",
-      "<nav><ul><li><a href='#'>Home</a></li><li><a href='#'>About</a></li></ul></nav>",
-      "<nav><p><a href='#'>Home</a> | <a href='#'>About</a></p></nav>",
-      "<nav><span><a href='#'>Home</a></span><span><a href='#'>About</a></span></nav>"
-    ],
-    "answerIndex": 1,
-    "answerText": "<nav><ul><li><a href='#'>Home</a></li><li><a href='#'>About</a></li></ul></nav>",
-    "explanation": "Navigation menus are semantically lists of links. Using <ul> and <li> inside <nav> represents that structure explicitly and helps screen readers."
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "What is typeof 'Hello'?",
+    "options": ["text", "char", "string", "word"],
+    "answerIndex": 2,
+    "answerText": "string",
+    "explanation": "typeof returns the data type, here a string."
   },
   {
     "id": 10,
-    "topic": "HTML",
-    "difficulty": "moderate",
-    "question": "For SEO and accessibility, which heading structure is MOST appropriate for a page with one main title and multiple sections?",
-    "options": [
-      "Multiple <h1> elements for each section",
-      "One <h1> for the page title, then <h2> for major sections, <h3> for subsections, etc.",
-      "Use headings based on visual size, ignoring hierarchy",
-      "Only one <h1> and no other headings"
-    ],
-    "answerIndex": 1,
-    "answerText": "One <h1> for the page title, then <h2> for major sections, <h3> for subsections, etc.",
-    "explanation": "Headings should reflect document hierarchy: a single main heading (<h1>) followed by nested levels. This improves SEO and screen-reader navigation."
+    "topic": "Mixed",
+    "difficulty": "easy",
+    "question": "HTML, CSS, JS together are used to build?",
+    "options": ["Backend only", "Operating system", "Websites", "Compiler"],
+    "answerIndex": 2,
+    "answerText": "Websites",
+    "explanation": "Frontend development is HTML + CSS + JavaScript combined."
   },
+
   {
     "id": 11,
-    "topic": "HTML",
-    "difficulty": "moderate",
-    "question": "You want to embed a video with multiple text tracks (subtitles in different languages). Which element is used to provide those tracks?",
-    "options": [
-      "<source>",
-      "<track>",
-      "<caption>",
-      "<subtitle>"
-    ],
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Which property sets font size?",
+    "options": ["font-weight", "font-size", "font-display", "text-size"],
     "answerIndex": 1,
-    "answerText": "<track>",
-    "explanation": "<track> is used inside <video> or <audio> to provide timed text tracks (subtitles, captions, descriptions, etc.)."
+    "answerText": "font-size",
+    "explanation": "font-size defines text size in px, em, rem, etc."
   },
   {
     "id": 12,
-    "topic": "HTML",
-    "difficulty": "advanced",
-    "question": "Which attribute combination on a <form> will correctly send form data as query parameters in the URL?",
-    "options": [
-      "method='post' enctype='multipart/form-data'",
-      "method='get' enctype='application/json'",
-      "method='get'",
-      "method='post' enctype='application/x-www-form-urlencoded'"
-    ],
-    "answerIndex": 2,
-    "answerText": "method='get'",
-    "explanation": "GET requests send data as query parameters in the URL by default. POST requests send data in the request body, not the URL."
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Which is a boolean value?",
+    "options": ["true", "'true'", "yes", "null"],
+    "answerIndex": 0,
+    "answerText": "true",
+    "explanation": "Booleans: true / false (without quotes)."
   },
   {
     "id": 13,
     "topic": "CSS",
-    "difficulty": "moderate",
-    "question": "Which CSS selector has the highest specificity?",
-    "options": [
-      "div .item",
-      ".sidebar .item",
-      "#main .item",
-      "header nav li.item"
-    ],
-    "answerIndex": 2,
-    "answerText": "#main .item",
-    "explanation": "ID selectors have higher specificity than class or type selectors. #main .item includes one ID, beating any combination of classes and element selectors."
+    "difficulty": "easy",
+    "question": "Which displays element as block?",
+    "options": ["display: block", "position: block", "visibility: block", "opacity: block"],
+    "answerIndex": 0,
+    "answerText": "display: block",
+    "explanation": "block elements span full width."
   },
   {
     "id": 14,
-    "topic": "CSS",
-    "difficulty": "moderate",
-    "question": "What is the default value of the box-sizing property in CSS?",
+    "topic": "HTML",
+    "difficulty": "easy",
+    "question": "Which meta tag controls responsiveness?",
     "options": [
-      "content-box",
-      "border-box",
-      "padding-box",
-      "margin-box"
+      "<meta name='scale'>",
+      "<meta name='viewport'>",
+      "<meta responsive='true'>",
+      "<meta width='device'>"
     ],
-    "answerIndex": 0,
-    "answerText": "content-box",
-    "explanation": "By default, width/height apply to the content box only. Padding and border are added on top unless box-sizing: border-box is set."
+    "answerIndex": 1,
+    "answerText": "<meta name='viewport'>",
+    "explanation": "viewport ensures scaling on mobile devices."
   },
   {
     "id": 15,
-    "topic": "CSS",
-    "difficulty": "advanced",
-    "question": "Which property combination will create a new Block Formatting Context (BFC)?",
-    "options": [
-      "display: inline-block",
-      "float: left",
-      "overflow: hidden",
-      "All of the above"
-    ],
-    "answerIndex": 3,
-    "answerText": "All of the above",
-    "explanation": "BFC can be triggered by several conditions including float not none, overflow not visible, display: inline-block, flex, grid, etc. Each option listed establishes a BFC."
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Which array method adds item to end?",
+    "options": ["pop()", "push()", "shift()", "slice()"],
+    "answerIndex": 1,
+    "answerText": "push()",
+    "explanation": "push inserts at the end, pop removes from end."
   },
+
   {
     "id": 16,
     "topic": "CSS",
-    "difficulty": "advanced",
-    "question": "In a flex container, which property on the container controls whether items wrap onto multiple lines?",
-    "options": [
-      "align-items",
-      "flex-flow",
-      "flex-wrap",
-      "justify-content"
-    ],
-    "answerIndex": 2,
-    "answerText": "flex-wrap",
-    "explanation": "flex-wrap specifically controls wrapping behavior: nowrap, wrap, or wrap-reverse. flex-flow is a shorthand combining flex-direction and flex-wrap."
+    "difficulty": "easy",
+    "question": "Which unit scales with root font size?",
+    "options": ["em", "rem", "px", "vh"],
+    "answerIndex": 1,
+    "answerText": "rem",
+    "explanation": "1rem = root element’s font-size."
   },
   {
     "id": 17,
-    "topic": "CSS",
-    "difficulty": "moderate",
-    "question": "Given display: flex on the container, which property on a child controls how much remaining space it takes relative to siblings?",
-    "options": [
-      "flex-grow",
-      "flex-basis",
-      "flex-shrink",
-      "order"
-    ],
+    "topic": "HTML",
+    "difficulty": "easy",
+    "question": "Which tag creates a link?",
+    "options": ["<a>", "<link>", "<href>", "<anchor>"],
     "answerIndex": 0,
-    "answerText": "flex-grow",
-    "explanation": "flex-grow determines how much of the remaining free space a flex item should take relative to other flex items."
+    "answerText": "<a>",
+    "explanation": "Anchor tag <a> creates hyperlinks using href attribute."
   },
   {
     "id": 18,
-    "topic": "CSS",
-    "difficulty": "advanced",
-    "question": "Which CSS unit is relative to the root element’s font-size?",
-    "options": [
-      "em",
-      "rem",
-      "vh",
-      "ch"
-    ],
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "console.log(10=='10')?",
+    "options": ["false", "true", "NaN", "undefined"],
     "answerIndex": 1,
-    "answerText": "rem",
-    "explanation": "rem (root em) is relative to the font-size of the root element (<html>). em is relative to the font-size of the current element."
+    "answerText": "true",
+    "explanation": "== allows type coercion; '10' → number 10."
   },
   {
     "id": 19,
     "topic": "CSS",
-    "difficulty": "advanced",
-    "question": "You want a fixed header at the top of the viewport that stays visible while scrolling. Which CSS property is MOST appropriate?",
-    "options": [
-      "position: relative; top: 0;",
-      "position: absolute; top: 0;",
-      "position: fixed; top: 0;",
-      "position: sticky; top: 0; with parent height: 100vh;"
-    ],
-    "answerIndex": 2,
-    "answerText": "position: fixed; top: 0;",
-    "explanation": "position: fixed attaches the element to the viewport, so it remains visible while scrolling. sticky depends on scroll position within a container."
+    "difficulty": "easy",
+    "question": "Which CSS property sets space inside an element's border?",
+    "options": ["margin", "padding", "gap", "offset"],
+    "answerIndex": 1,
+    "answerText": "padding",
+    "explanation": "padding adds inner spacing between content and border."
   },
   {
     "id": 20,
-    "topic": "CSS",
-    "difficulty": "advanced",
-    "question": "What is the main difference between position: fixed and position: sticky?",
-    "options": [
-      "fixed is relative to the parent, sticky to the viewport",
-      "fixed is relative to the viewport, sticky toggles between relative and fixed based on scroll",
-      "sticky is always on top of other content",
-      "They behave the same in all modern browsers"
-    ],
-    "answerIndex": 1,
-    "answerText": "fixed is relative to the viewport, sticky toggles between relative and fixed based on scroll",
-    "explanation": "position: fixed anchors to the viewport. position: sticky behaves like relative until a scroll threshold is reached, then it 'sticks' like fixed within its container."
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "typeof null = ?",
+    "options": ["null", "undefined", "object", "string"],
+    "answerIndex": 2,
+    "answerText": "object",
+    "explanation": "A historical bug in JS — typeof null returns 'object'."
   },
   {
     "id": 21,
-    "topic": "CSS",
-    "difficulty": "moderate",
-    "question": "Which media query is correct to apply styles only on screens with max width 768px?",
-    "options": [
-      "@media (width <= 768px) { ... }",
-      "@media screen and (max-width: 768px) { ... }",
-      "@media only (max-width: 768px) { ... }",
-      "@media device-width <= 768px { ... }"
-    ],
-    "answerIndex": 1,
-    "answerText": "@media screen and (max-width: 768px) { ... }",
-    "explanation": "The standard syntax uses @media screen and (max-width: 768px). Other options are invalid or non-standard."
+    "topic": "HTML",
+    "difficulty": "easy",
+    "question": "Which input type is used for email validation?",
+    "options": ["text", "mail", "email", "validate"],
+    "answerIndex": 2,
+    "answerText": "email",
+    "explanation": "<input type='email'> triggers built-in validation."
   },
   {
     "id": 22,
     "topic": "CSS",
-    "difficulty": "advanced",
-    "question": "You want a CSS Grid layout with 3 equal-width columns that shrink but never go below 200px. Which template definition is MOST appropriate?",
-    "options": [
-      "grid-template-columns: 1fr 1fr 1fr;",
-      "grid-template-columns: repeat(3, minmax(200px, 1fr));",
-      "grid-template-columns: repeat(auto-fit, 1fr);",
-      "grid-template-columns: repeat(auto-fill, 200px);"
-    ],
+    "difficulty": "easy",
+    "question": "Which display makes elements sit side-by-side?",
+    "options": ["block", "inline", "none", "hidden"],
     "answerIndex": 1,
-    "answerText": "grid-template-columns: repeat(3, minmax(200px, 1fr));",
-    "explanation": "minmax(200px, 1fr) ensures each column is at least 200px and can grow to share remaining space. repeat(3, ...) creates exactly three such columns."
+    "answerText": "inline",
+    "explanation": "inline elements flow horizontally without line break."
   },
   {
     "id": 23,
-    "topic": "CSS",
-    "difficulty": "advanced",
-    "question": "Which property is used to create a stacking context other than position and z-index?",
-    "options": [
-      "opacity < 1",
-      "display: flex",
-      "background-color",
-      "float: left"
-    ],
-    "answerIndex": 0,
-    "answerText": "opacity < 1",
-    "explanation": "Elements with opacity less than 1 create a new stacking context. Other properties like transform also do, but display: flex and background-color alone do not."
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Which symbol comments one line?",
+    "options": ["<!-- -->", "//", "/* */", "#"],
+    "answerIndex": 1,
+    "answerText": "//",
+    "explanation": "// is used for single-line comments in JS."
   },
   {
     "id": 24,
-    "topic": "CSS",
-    "difficulty": "advanced",
-    "question": "What is the effect of setting overflow: auto on a container?",
-    "options": [
-      "Always shows scrollbars",
-      "Hides overflowing content without scrollbars",
-      "Creates scrollbars only when content overflows",
-      "Disables scrolling entirely"
-    ],
-    "answerIndex": 2,
-    "answerText": "Creates scrollbars only when content overflows",
-    "explanation": "overflow: auto will create scrollbars only if the content exceeds the container’s box. overflow: scroll shows scrollbars even when not needed; hidden clips content with no scroll."
+    "topic": "Mixed",
+    "difficulty": "easy",
+    "question": "Frontend includes?",
+    "options": ["HTML only", "HTML + CSS + JS", "PHP only", "SQL only"],
+    "answerIndex": 1,
+    "answerText": "HTML + CSS + JS",
+    "explanation": "These three combined build UI/UX of websites."
   },
   {
     "id": 25,
     "topic": "CSS",
-    "difficulty": "moderate",
-    "question": "Given .card { padding: 20px; border: 2px solid; width: 200px; box-sizing: border-box; }, what is the total rendered width of .card?",
-    "options": [
-      "200px",
-      "244px",
-      "224px",
-      "Unknown without margin"
-    ],
-    "answerIndex": 0,
-    "answerText": "200px",
-    "explanation": "With box-sizing: border-box, the specified width includes content, padding, and border. So total width remains 200px (excluding margin)."
+    "difficulty": "easy",
+    "question": "Which property makes text bold?",
+    "options": ["font-style", "font-weight", "font-thickness", "text-bold"],
+    "answerIndex": 1,
+    "answerText": "font-weight",
+    "explanation": "font-weight: bold; or numeric 700 typically."
   },
   {
     "id": 26,
-    "topic": "CSS",
-    "difficulty": "moderate",
-    "question": "Which property is MOST suitable for adding a non-selectable decorative icon before each list item without extra HTML?",
-    "options": [
-      "list-style-type",
-      "::before with content",
-      ":hover with background-image",
-      "border-image"
-    ],
-    "answerIndex": 1,
-    "answerText": "::before with content",
-    "explanation": "Using ::before with content allows you to inject decorative icons via CSS without modifying the HTML. list-style-type is limited to standard markers."
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Which is NOT a primitive type?",
+    "options": ["string", "number", "object", "boolean"],
+    "answerIndex": 2,
+    "answerText": "object",
+    "explanation": "object is non-primitive (reference type)."
   },
   {
     "id": 27,
-    "topic": "CSS",
-    "difficulty": "advanced",
-    "question": "Which of the following transitions will NOT be animated by CSS transitions?",
-    "options": [
-      "opacity: 0 to 1",
-      "transform: scale(1) to scale(1.2)",
-      "display: none to block",
-      "background-color: red to blue"
-    ],
-    "answerIndex": 2,
-    "answerText": "display: none to block",
-    "explanation": "display cannot be transitioned. Properties like opacity, transform, and colors are animatable."
+    "topic": "HTML",
+    "difficulty": "easy",
+    "question": "Which element creates a list with bullets?",
+    "options": ["<ol>", "<ul>", "<list>", "<points>"],
+    "answerIndex": 1,
+    "answerText": "<ul>",
+    "explanation": "<ul> unordered list = bullet points."
   },
   {
     "id": 28,
     "topic": "CSS",
-    "difficulty": "advanced",
-    "question": "Which selector selects only <p> elements that are direct children of an element with class .content?",
-    "options": [
-      ".content p",
-      ".content > p",
-      ".content + p",
-      ".content ~ p"
-    ],
-    "answerIndex": 1,
-    "answerText": ".content > p",
-    "explanation": "The > combinator selects direct children only. .content p selects all descendants, not just direct children."
+    "difficulty": "easy",
+    "question": "Which property changes element height?",
+    "options": ["height", "size-y", "block-height", "offset-height"],
+    "answerIndex": 0,
+    "answerText": "height",
+    "explanation": "height sets vertical size directly."
   },
   {
     "id": 29,
-    "topic": "CSS",
-    "difficulty": "advanced",
-    "question": "What does the :not(.active) selector do?",
-    "options": [
-      "Selects only elements with class active",
-      "Selects elements after .active",
-      "Selects elements that do NOT have class active",
-      "Selects the parent of .active"
-    ],
-    "answerIndex": 2,
-    "answerText": "Selects elements that do NOT have class active",
-    "explanation": ":not(selector) negates the given selector, matching elements that do not match it. :not(.active) matches elements without the active class."
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "console.log('5' + 5) outputs?",
+    "options": ["10", "'55'", "NaN", "5"],
+    "answerIndex": 1,
+    "answerText": "'55'",
+    "explanation": "+ performs string concatenation when one operand is a string."
   },
   {
     "id": 30,
-    "topic": "CSS",
-    "difficulty": "advanced",
-    "question": "Which is the MOST performant way to animate a box moving across the screen?",
-    "options": [
-      "Changing left/top with position: absolute",
-      "Changing margin-left",
-      "Using transform: translateX(...)",
-      "Changing width to simulate movement"
-    ],
-    "answerIndex": 2,
-    "answerText": "Using transform: translateX(...)",
-    "explanation": "Transform animations (translate, scale) are usually hardware-accelerated and avoid layout recalculations, leading to smoother performance than animating layout properties like left or margin."
+    "topic": "HTML",
+    "difficulty": "easy",
+    "question": "What does <br> do?",
+    "options": ["Bold text", "Line break", "Page break", "Creates border"],
+    "answerIndex": 1,
+    "answerText": "Line break",
+    "explanation": "<br> inserts new line in text."
   },
+
   {
     "id": 31,
-    "topic": "JavaScript",
-    "difficulty": "moderate",
-    "question": "What is the output of console.log(typeof null) in JavaScript?",
-    "options": [
-      "'null'",
-      "'object'",
-      "'undefined'",
-      "'number'"
-    ],
-    "answerIndex": 1,
-    "answerText": "'object'",
-    "explanation": "typeof null returns 'object' due to a historical bug in JavaScript that is preserved for backward compatibility."
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "To center text use?",
+    "options": ["align:center", "justify:center", "text-align:center", "center-text"],
+    "answerIndex": 2,
+    "answerText": "text-align:center",
+    "explanation": "Aligns inline content (text/images) horizontally."
   },
   {
     "id": 32,
     "topic": "JavaScript",
-    "difficulty": "moderate",
-    "question": "What will be logged?\n\nlet a;\nconsole.log(a === undefined);\n",
-    "options": [
-      "true",
-      "false",
-      "Throws ReferenceError",
-      "'undefined'"
-    ],
-    "answerIndex": 0,
-    "answerText": "true",
-    "explanation": "Declared but uninitialized variables have the value undefined. So a === undefined evaluates to true."
+    "difficulty": "easy",
+    "question": "Which operator checks strict equality?",
+    "options": ["==", "===", "!=", "="],
+    "answerIndex": 1,
+    "answerText": "===",
+    "explanation": "=== compares value and type without coercion."
   },
   {
     "id": 33,
-    "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "What will this print?\n\nconsole.log(0 == '');\nconsole.log(0 === '');\n",
-    "options": [
-      "true true",
-      "false true",
-      "true false",
-      "false false"
-    ],
-    "answerIndex": 2,
-    "answerText": "true false",
-    "explanation": "In 0 == '', '' is coerced to 0, so 0 == 0 is true. With ===, no coercion happens; number 0 is not strictly equal to string '', so false."
+    "topic": "HTML",
+    "difficulty": "easy",
+    "question": "Which tag stores JavaScript?",
+    "options": ["<js>", "<script>", "<java>", "<logic>"],
+    "answerIndex": 1,
+    "answerText": "<script>",
+    "explanation": "JavaScript code is placed inside <script> tags."
   },
   {
     "id": 34,
-    "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "What is the main difference between let and var in terms of scope?",
-    "options": [
-      "var is block-scoped, let is function-scoped",
-      "Both are block-scoped",
-      "var is function-scoped, let is block-scoped",
-      "No difference; they are aliases"
-    ],
-    "answerIndex": 2,
-    "answerText": "var is function-scoped, let is block-scoped",
-    "explanation": "var is scoped to the nearest function or global. let (and const) are scoped to the nearest block ({ ... })."
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "CSS stands for?",
+       "options": ["Coded Style Syntax", "Cascade Style Sheets", "Creative Styling System", "Core Style Script"],
+    "answerIndex": 1,
+    "answerText": "Cascade Style Sheets",
+    "explanation": "Styles cascade from top → bottom allowing overrides."
   },
   {
     "id": 35,
     "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "What will this code log?\n\nfor (var i = 0; i < 3; i++) {\n  setTimeout(() => console.log(i), 0);\n}\n",
-    "options": [
-      "0 1 2",
-      "0 1 2 3",
-      "3 3 3",
-      "undefined undefined undefined"
-    ],
-    "answerIndex": 2,
-    "answerText": "3 3 3",
-    "explanation": "var is function-scoped. The same i is shared across all callbacks. By the time setTimeout runs, the loop has finished and i is 3, so it logs 3 three times."
+    "difficulty": "easy",
+    "question": "Which array method removes the last item?",
+    "options": ["pop()", "push()", "shift()", "removeLast()"],
+    "answerIndex": 0,
+    "answerText": "pop()",
+    "explanation": "pop removes last, shift removes first."
   },
+
   {
     "id": 36,
-    "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "How can you fix the previous loop so it logs 0, 1, 2?",
-    "options": [
-      "Use let instead of var for i",
-      "Add i++ inside setTimeout",
-      "Wrap console.log in an IIFE passing i",
-      "Both A and C"
-    ],
-    "answerIndex": 3,
-    "answerText": "Both A and C",
-    "explanation": "Using let i creates a new binding per iteration. Alternatively, an IIFE capturing i as a parameter also creates a new scope per iteration."
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Which property hides an element but keeps space?",
+    "options": ["display:none", "visibility:hidden", "opacity:0", "hidden:true"],
+    "answerIndex": 1,
+    "answerText": "visibility:hidden",
+    "explanation": "Hidden still reserves space; display:none removes completely."
   },
   {
     "id": 37,
-    "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "What is a closure in JavaScript?",
-    "options": [
-      "A function without a return value",
-      "A function bundled with its lexical environment",
-      "A function that runs only once",
-      "A function that closes the browser window"
-    ],
+    "topic": "HTML",
+    "difficulty": "easy",
+    "question": "The <title> tag appears in?",
+    "options": ["body", "head", "footer", "script"],
     "answerIndex": 1,
-    "answerText": "A function bundled with its lexical environment",
-    "explanation": "A closure is formed when a function retains access to its lexical scope, even when executed outside that scope. It can remember variables from its outer function."
+    "answerText": "head",
+    "explanation": "The title shows in browser tab — inside <head>."
   },
   {
     "id": 38,
     "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "What is logged?\n\nfunction makeCounter() {\n  let count = 0;\n  return function () {\n    return ++count;\n  }\n}\n\nconst c1 = makeCounter();\nconst c2 = makeCounter();\nconsole.log(c1(), c1(), c2());\n",
-    "options": [
-      "1 2 1",
-      "1 2 3",
-      "0 1 0",
-      "2 3 4"
-    ],
-    "answerIndex": 0,
-    "answerText": "1 2 1",
-    "explanation": "Each makeCounter call creates a separate closure with its own count. c1 increments its count twice (1, then 2). c2 starts from 0 and increments to 1."
+    "difficulty": "easy",
+    "question": "Which function outputs to browser console?",
+    "options": ["alert()", "console.log()", "document.write()", "log()"],
+    "answerIndex": 1,
+    "answerText": "console.log()",
+    "explanation": "Used for debugging + output in developer console."
   },
   {
     "id": 39,
-    "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "What is the value of this?\n\nconst obj = { a: 1, b: 2 };\nconst { a: x, c: y = 10 } = obj;\nconsole.log(x, y);\n",
-    "options": [
-      "1 2",
-      "1 undefined",
-      "undefined 10",
-      "1 10"
-    ],
-    "answerIndex": 3,
-    "answerText": "1 10",
-    "explanation": "Destructuring maps a to x, so x = 1. Property c doesn’t exist, so default value 10 is used for y."
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "border:1px solid red means?",
+    "options": ["only top border", "black border", "1px red border", "dashed border"],
+    "answerIndex": 2,
+    "answerText": "1px red border",
+    "explanation": "Border syntax → width style color."
   },
   {
     "id": 40,
-    "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "What will this log?\n\nconsole.log([...new Set([1,2,2,3,3,3])]);\n",
-    "options": [
-      "[1,2,2,3,3,3]",
-      "[1,2,3]",
-      "[3,2,1]",
-      "TypeError"
-    ],
+    "topic": "HTML",
+    "difficulty": "easy",
+    "question": "Which tag plays audio?",
+    "options": ["<sound>", "<audio>", "<mp3>", "<tone>"],
     "answerIndex": 1,
-    "answerText": "[1,2,3]",
-    "explanation": "Set stores unique values only. Spreading the Set into an array removes duplicates, preserving insertion order: 1, 2, 3."
+    "answerText": "<audio>",
+    "explanation": "<audio controls> can play MP3, WAV, OGG."
   },
+
   {
     "id": 41,
     "topic": "JavaScript",
-    "difficulty": "moderate",
-    "question": "Which array method is best suited to transform all elements into a new array while keeping the original array unchanged?",
-    "options": [
-      "forEach",
-      "map",
-      "filter",
-      "reduce"
-    ],
-    "answerIndex": 1,
-    "answerText": "map",
-    "explanation": "map returns a new array with the results of applying a function to every element. forEach returns undefined and is used for side effects."
+    "difficulty": "easy",
+    "question": "What is NaN?",
+    "options": ["Not a Number", "New Active Number", "No Access Node", "Negative Addition"],
+    "answerIndex": 0,
+    "answerText": "Not a Number",
+    "explanation": "NaN is special numeric value for invalid math operations."
   },
   {
     "id": 42,
-    "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "What does Array.prototype.reduce do?",
-    "options": [
-      "Concatenates two arrays",
-      "Sorts an array in ascending order",
-      "Executes a reducer function on each element, resulting in a single output value",
-      "Removes duplicate elements"
-    ],
-    "answerIndex": 2,
-    "answerText": "Executes a reducer function on each element, resulting in a single output value",
-    "explanation": "reduce accumulates values across the array into a single result (number, object, array, etc.) using the reducer callback and an initial value."
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Which selector targets class?",
+    "options": [".", "#", "*", "$"],
+    "answerIndex": 0,
+    "answerText": ".",
+    "explanation": ".className selects elements by class attribute."
   },
   {
     "id": 43,
-    "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "What is logged?\n\nconsole.log(typeof NaN, Number.isNaN('foo'));\n",
-    "options": [
-      "'number' true",
-      "'number' false",
-      "'NaN' true",
-      "'NaN' false"
-    ],
+    "topic": "HTML",
+    "difficulty": "easy",
+    "question": "Which element creates a dropdown menu?",
+    "options": ["<option>", "<select>", "<dropdown>", "<input type='select'>"],
     "answerIndex": 1,
-    "answerText": "'number' false",
-    "explanation": "NaN is of type 'number'. Number.isNaN('foo') is false because it doesn’t coerce; 'foo' is not the NaN value. isNaN('foo') (global) would be true due to coercion."
+    "answerText": "<select>",
+    "explanation": "<select> contains <option> inside."
   },
   {
     "id": 44,
     "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "Which statement is TRUE about the event loop in JavaScript?",
-    "options": [
-      "JavaScript runs multiple threads for user code",
-      "The event loop allows asynchronous callbacks to be executed in a single-threaded environment",
-      "The event loop is only available in Node.js",
-      "The event loop executes callbacks in parallel"
-    ],
+    "difficulty": "easy",
+    "question": "[] is what type?",
+    "options": ["object", "array", "list", "undefined"],
     "answerIndex": 1,
-    "answerText": "The event loop allows asynchronous callbacks to be executed in a single-threaded environment",
-    "explanation": "JavaScript is single-threaded at the language level. The event loop coordinates the execution of queued callbacks (from timers, promises, I/O) in that single thread."
+    "answerText": "array",
+    "explanation": "Technically typeof[] == object, but it is an array structure."
   },
   {
     "id": 45,
-    "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "What is the order of logs?\n\nconsole.log('A');\nsetTimeout(() => console.log('B'), 0);\nPromise.resolve().then(() => console.log('C'));\nconsole.log('D');\n",
-    "options": [
-      "A D C B",
-      "A C D B",
-      "A B C D",
-      "C A D B"
-    ],
-    "answerIndex": 0,
-    "answerText": "A D C B",
-    "explanation": "Synchronous logs A and D run first. Promise callbacks (microtasks) run next, so C. setTimeout callbacks (macrotasks) run after microtasks, so B last."
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Which makes corners rounded?",
+    "options": ["border-round", "outline-radius", "radius", "border-radius"],
+    "answerIndex": 3,
+    "answerText": "border-radius",
+    "explanation": "border-radius:10px creates curved edges."
   },
+
   {
     "id": 46,
-    "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "What is the result of this async function?\n\nasync function f() {\n  return 42;\n}\n\nconsole.log(f());\n",
-    "options": [
-      "42",
-      "A pending Promise",
-      "undefined",
-      "Throws an error"
-    ],
-    "answerIndex": 1,
-    "answerText": "A pending Promise",
-    "explanation": "async functions always return a Promise. return 42 is equivalent to Promise.resolve(42). So f() returns a Promise, which logs as a Promise object."
+    "topic": "HTML",
+    "difficulty": "easy",
+    "question": "Which tag embeds video?",
+    "options": ["<media>", "<vid>", "<video>", "<frame>"],
+    "answerIndex": 2,
+    "answerText": "<video>",
+    "explanation": "<video controls> supports mp4, webm, ogg."
   },
   {
     "id": 47,
     "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "Given:\n\nasync function g() {\n  return 42;\n}\n\n(async () => {\n  console.log(await g());\n})();\n\nWhat is logged?",
-    "options": [
-      "Promise { 42 }",
-      "42",
-      "undefined",
-      "Error: cannot await"
-    ],
-    "answerIndex": 1,
-    "answerText": "42",
-    "explanation": "await g() waits for the Promise returned by g to resolve and yields the value 42, which is then logged."
+    "difficulty": "easy",
+    "question": "Which converts string to number?",
+    "options": ["Number()", "parseInt()", "Both", "JSON.parse()"],
+    "answerIndex": 2,
+    "answerText": "Both",
+    "explanation": "Number('5')→5 and parseInt('5')→5."
   },
   {
     "id": 48,
-    "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "Which statement about Promise.all is TRUE?",
-    "options": [
-      "It resolves as soon as the first promise resolves",
-      "It rejects as soon as the first promise rejects",
-      "It always waits for all promises to settle, ignoring rejections",
-      "It returns the first promise passed to it"
-    ],
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Which shows element as hidden but clickable disabled?",
+    "options": ["display:none", "visibility:hidden", "opacity:0", "z-index:-1"],
     "answerIndex": 1,
-    "answerText": "It rejects as soon as the first promise rejects",
-    "explanation": "Promise.all resolves when all promises resolve; if any promise rejects, Promise.all rejects immediately with that rejection reason."
+    "answerText": "visibility:hidden",
+    "explanation": "Element is invisible but space remains."
   },
   {
     "id": 49,
-    "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "Which DOM method is the MOST efficient and safe to insert a string of HTML as children of an existing element?",
-    "options": [
-      "element.innerHTML += '<p>Test</p>'",
-      "element.insertAdjacentHTML('beforeend', '<p>Test</p>')",
-      "document.write('<p>Test</p>')",
-      "element.outerHTML = '<div><p>Test</p></div>'"
-    ],
-    "answerIndex": 1,
-    "answerText": "element.insertAdjacentHTML('beforeend', '<p>Test</p>')",
-    "explanation": "insertAdjacentHTML inserts parsed HTML at a specific position without re-parsing the entire innerHTML. document.write is problematic, and outerHTML replaces the element itself."
+    "topic": "HTML",
+    "difficulty": "easy",
+    "question": "Self closing tag example?",
+    "options": ["<div>", "<span>", "<img>", "<p>"],
+    "answerIndex": 2,
+    "answerText": "<img>",
+    "explanation": "<img> doesn't require a closing tag."
   },
   {
     "id": 50,
     "topic": "JavaScript",
-    "difficulty": "moderate",
-    "question": "What does event.preventDefault() do?",
-    "options": [
-      "Stops the event from bubbling up the DOM",
-      "Prevents the default browser action associated with the event",
-      "Removes the event listener",
-      "Stops other listeners on the same element"
-    ],
+    "difficulty": "easy",
+    "question": "console.log(typeof [])?",
+    "options": ["array", "object", "undefined", "function"],
     "answerIndex": 1,
-    "answerText": "Prevents the default browser action associated with the event",
-    "explanation": "preventDefault stops default actions like form submission or navigation. To stop bubbling you use event.stopPropagation or stopImmediatePropagation."
+    "answerText": "object",
+    "explanation": "Array is built on top of object prototype."
   },
+
   {
     "id": 51,
-    "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "What will be logged?\n\nconst obj = { a: 1 };\nObject.freeze(obj);\nobj.a = 2;\nconsole.log(obj.a);\n",
-    "options": [
-      "1",
-      "2",
-      "undefined",
-      "Throws TypeError in all environments"
-    ],
-    "answerIndex": 0,
-    "answerText": "1",
-    "explanation": "Object.freeze makes properties non-writable and non-configurable. In non-strict mode, assignment silently fails and value remains 1. In strict mode it throws, but the log is never reached."
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Which centers a block element?",
+    "options": ["text-align:center", "margin:auto", "align:center", "center:true"],
+    "answerIndex": 1,
+    "answerText": "margin:auto",
+    "explanation": "Works when width is set — auto left/right centers the block."
   },
   {
     "id": 52,
     "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "What will this log?\n\nfunction Foo() {}\nFoo.prototype.x = 10;\nconst a = new Foo();\nconst b = Object.create(Foo.prototype);\nconsole.log(a.x, b.x);\n",
-    "options": [
-      "10 undefined",
-      "undefined 10",
-      "10 10",
-      "undefined undefined"
-    ],
+    "difficulty": "medium",
+    "question": "Difference between let and var?",
+    "options": ["let is global", "var is block-scoped", "let is block-scoped", "No difference"],
     "answerIndex": 2,
-    "answerText": "10 10",
-    "explanation": "Both a and b have Foo.prototype in their prototype chain. x is on Foo.prototype, so both inherit x = 10."
+    "answerText": "let is block-scoped",
+    "explanation": "var is function-scoped, let is block-scoped."
   },
   {
     "id": 53,
-    "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "Which is the correct way to create a class with a static method in modern JavaScript?",
-    "options": [
-      "function User() {}; User.static sayHi = function() {};",
-      "class User { static sayHi() { console.log('Hi'); } }",
-      "class User { function sayHi() { console.log('Hi'); } static; }",
-      "static class User { sayHi() {} }"
-    ],
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "display:flex does what?",
+    "options": ["Makes grid", "Creates flexible container", "Hides items", "Centers text"],
     "answerIndex": 1,
-    "answerText": "class User { static sayHi() { console.log('Hi'); } }",
-    "explanation": "The static keyword inside a class definition defines a static method, accessible as User.sayHi() not on instances."
+    "answerText": "Creates flexible container",
+    "explanation": "flex layout arranges children on main axis by default."
   },
   {
     "id": 54,
-    "topic": "JavaScript",
-    "difficulty": "moderate",
-    "question": "What does the spread operator ... do in this context?\n\nconst arr2 = [...arr1, 4, 5];\n",
-    "options": [
-      "Mutates arr1",
-      "Copies the elements of arr1 into a new array",
-      "Creates a reference to arr1",
-      "Concats arr1 with 4 and 5 in place"
-    ],
+    "topic": "HTML",
+    "difficulty": "medium",
+    "question": "Semantic element example?",
+    "options": ["<div>", "<nav>", "<span>", "<b>"],
     "answerIndex": 1,
-    "answerText": "Copies the elements of arr1 into a new array",
-    "explanation": "Spread syntax in an array literal expands arr1's elements into a new array. arr1 itself is not mutated."
+    "answerText": "<nav>",
+    "explanation": "Provides meaning to structure unlike generic <div>."
   },
   {
     "id": 55,
     "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "What will be logged?\n\nconsole.log({} == {});\n",
-    "options": [
-      "true",
-      "false",
-      "undefined",
-      "Throws TypeError"
-    ],
-    "answerIndex": 1,
-    "answerText": "false",
-    "explanation": "Objects are compared by reference, not by structure. Two different literal objects are distinct references, so {} == {} is false."
+    "difficulty": "medium",
+    "question": "Which is NOT falsy?",
+    "options": ["0", "''", "null", "'false'"],
+    "answerIndex": 3,
+    "answerText": "'false'",
+    "explanation": "Non-empty strings = truthy even if value reads false."
   },
+
   {
     "id": 56,
-    "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "What is the difference between document.querySelectorAll('.item') and document.getElementsByClassName('item')?",
-    "options": [
-      "querySelectorAll returns a live collection; getElementsByClassName returns static",
-      "Both return live collections",
-      "querySelectorAll returns a static NodeList; getElementsByClassName returns a live HTMLCollection",
-      "Both return static arrays"
-    ],
-    "answerIndex": 2,
-    "answerText": "querySelectorAll returns a static NodeList; getElementsByClassName returns a live HTMLCollection",
-    "explanation": "querySelectorAll snapshot doesn’t update when DOM changes. getElementsByClassName returns a live collection that reflects DOM changes automatically."
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "flex-grow:1 means?",
+    "options": ["Item shrinks only", "Item takes equal space", "Item fixed", "No width allowed"],
+    "answerIndex": 1,
+    "answerText": "Item takes equal space",
+    "explanation": "Flex items expand to fill leftover free space."
   },
   {
     "id": 57,
     "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "What will be logged?\n\nconsole.log(typeof []);\nconsole.log(Array.isArray([]));\n",
-    "options": [
-      "'array' true",
-      "'object' true",
-      "'object' false",
-      "'array' false"
-    ],
+    "difficulty": "medium",
+    "question": "Which method iterates array returning new one?",
+    "options": ["forEach()", "map()", "push()", "pop()"],
     "answerIndex": 1,
-    "answerText": "'object' true",
-    "explanation": "Arrays are objects, so typeof [] is 'object'. Array.isArray checks specifically for arrays and returns true."
+    "answerText": "map()",
+    "explanation": "map returns a transformed array unlike forEach."
   },
   {
     "id": 58,
-    "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "Which of these is the correct way to deeply clone a plain JSON-serializable object?",
-    "options": [
-      "const copy = obj;",
-      "const copy = Object.assign({}, obj);",
-      "const copy = JSON.parse(JSON.stringify(obj));",
-      "const copy = { ...obj };"
-    ],
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Position element relative to browser window?",
+    "options": ["relative", "absolute", "fixed", "sticky"],
     "answerIndex": 2,
-    "answerText": "const copy = JSON.parse(JSON.stringify(obj));",
-    "explanation": "JSON.parse(JSON.stringify(obj)) creates a deep clone for JSON-safe data. Object.assign and spread only create shallow copies."
+    "answerText": "fixed",
+    "explanation": "fixed positions element relative to viewport."
   },
   {
     "id": 59,
-    "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "What will be logged?\n\nconsole.log(+[]);\nconsole.log(+['3']);\n",
-    "options": [
-      "0 and 3",
-      "NaN and 3",
-      "0 and NaN",
-      "NaN and NaN"
-    ],
+    "topic": "HTML",
+    "difficulty": "medium",
+    "question": "What does <form> require to submit?",
+    "options": ["method/action", "script tag", "CSS styles", "server"],
     "answerIndex": 0,
-    "answerText": "0 and 3",
-    "explanation": "Unary + converts to number. [] becomes '' then 0. ['3'] becomes '3' then 3. More complex arrays usually become NaN."
+    "answerText": "method/action",
+    "explanation": "method(POST/GET) + action(url) required for submission."
   },
   {
     "id": 60,
     "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "What is the main purpose of using 'use strict'; at the top of a script or function?",
-    "options": [
-      "To optimize performance",
-      "To enable ES6 features",
-      "To enforce stricter parsing and error handling",
-      "To enable TypeScript type checking"
-    ],
-    "answerIndex": 2,
-    "answerText": "To enforce stricter parsing and error handling",
-    "explanation": "Strict mode disallows some silent errors (like assigning to undeclared variables), changes some semantics, and helps catch bugs earlier."
+    "difficulty": "medium",
+    "question": "JSON stands for?",
+    "options": ["JavaScript Oriented Nodes", "JavaScript Object Notation", "Java Syntax Object", "Java Network Output"],
+    "answerIndex": 1,
+    "answerText": "JavaScript Object Notation",
+    "explanation": "Lightweight text format for structured data."
   },
+
   {
     "id": 61,
-    "topic": "HTML",
-    "difficulty": "advanced",
-    "question": "Which attribute on a <script> tag ensures that the script is executed after the HTML is parsed, but before DOMContentLoaded fires, and in the order they appear?",
-    "options": [
-      "async",
-      "defer",
-      "type='module'",
-      "nomodule"
-    ],
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "overflow:hidden results in?",
+    "options": ["Scrollbars appear", "Clips overflow", "Zooms content", "Children disappear permanently"],
     "answerIndex": 1,
-    "answerText": "defer",
-    "explanation": "defer downloads scripts in parallel but executes them after parsing, in document order, before DOMContentLoaded. async executes as soon as loaded, order not guaranteed."
+    "answerText": "Clips overflow",
+    "explanation": "Content beyond boundaries is cut off."
   },
   {
     "id": 62,
-    "topic": "HTML",
-    "difficulty": "advanced",
-    "question": "Which element and attribute should be used to provide a caption for a <figure> containing an image?",
-    "options": [
-      "<caption> inside <figure>",
-      "<figcaption> inside <figure>",
-      "alt attribute on <figure>",
-      "title attribute on <figure>"
-    ],
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "setTimeout is?",
+    "options": ["Blocking", "Non-blocking async", "Compiler", "Promise always"],
     "answerIndex": 1,
-    "answerText": "<figcaption> inside <figure>",
-    "explanation": "figcaption provides a caption for figure content (like an image). caption is for tables. alt is for images, not group captions."
+    "answerText": "Non-blocking async",
+    "explanation": "Runs later via callback queue not instantly."
   },
   {
     "id": 63,
-    "topic": "HTML",
-    "difficulty": "advanced",
-    "question": "Which attribute is MOST appropriate to associate a <label> with its corresponding <input> when they are not nested?",
-    "options": [
-      "for on <label> and id on <input>",
-      "name on <label> and name on <input>",
-      "class on both",
-      "aria-label on <input>"
-    ],
-    "answerIndex": 0,
-    "answerText": "for on <label> and id on <input>",
-    "explanation": "The label's for attribute should match the input's id to associate them. This improves accessibility and allows clicking the label to focus the input."
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "grid-template-columns:repeat(3,1fr) means?",
+    "options": ["3 rows", "3 equal columns", "3 auto gaps", "center grid"],
+    "answerIndex": 1,
+    "answerText": "3 equal columns",
+    "explanation": "1fr each — equal fractional width."
   },
   {
     "id": 64,
     "topic": "HTML",
-    "difficulty": "advanced",
-    "question": "Which attribute is best suited for providing a machine-readable date on an <time> element?",
-    "options": [
-      "datetime",
-      "value",
-      "data-date",
-      "title"
-    ],
-    "answerIndex": 0,
-    "answerText": "datetime",
-    "explanation": "The datetime attribute on time is specifically for a machine-readable date/time, while the content can be human-readable."
+    "difficulty": "medium",
+    "question": "Which tag is used for tables?",
+    "options": ["<tb>", "<table>", "<t>", "<body>"],
+    "answerIndex": 1,
+    "answerText": "<table>",
+    "explanation": "Contains <thead> <tbody> <tr> <td> inside."
   },
   {
     "id": 65,
-    "topic": "CSS",
-    "difficulty": "advanced",
-    "question": "Which will center a block element horizontally within its parent (parent has width set)?",
-    "options": [
-      "margin-left: auto; margin-right: auto;",
-      "text-align: center;",
-      "display: inline-block;",
-      "position: absolute; left: 50%;"
-    ],
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "typeof NaN is?",
+    "options": ["number", "NaN", "undefined", "object"],
     "answerIndex": 0,
-    "answerText": "margin-left: auto; margin-right: auto;",
-    "explanation": "Auto left and right margins on a block element with a defined width cause it to center horizontally in its container. text-align affects inline content."
+    "answerText": "number",
+    "explanation": "NaN is an invalid numeric result yet typeof numeric."
   },
+
   {
     "id": 66,
     "topic": "CSS",
-    "difficulty": "advanced",
-    "question": "Which pseudo-class selects an input element only when its value is invalid according to type or pattern?",
-    "options": [
-      ":invalid",
-      ":required",
-      ":checked",
-      ":focus"
-    ],
-    "answerIndex": 0,
-    "answerText": ":invalid",
-    "explanation": ":invalid matches form elements that fail validation (e.g., incorrect type or pattern)."
+    "difficulty": "medium",
+    "question": "opacity:0 vs display:none difference?",
+    "options": ["Both same", "opacity invisible but clickable", "display keeps space", "opacity removes element"],
+    "answerIndex": 1,
+    "answerText": "opacity invisible but clickable",
+    "explanation": "display:none removes element entirely."
   },
   {
     "id": 67,
-    "topic": "CSS",
-    "difficulty": "advanced",
-    "question": "Which rule will apply styles only when the user’s system prefers a dark color scheme?",
-    "options": [
-      "@media (color-scheme: dark) { ... }",
-      "@media (prefers-color-scheme: dark) { ... }",
-      "@media (contrast: more) { ... }",
-      "@media (scheme: dark) { ... }"
-    ],
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "What does 'use strict' enforce?",
+    "options": ["slower code", "safer syntax", "more warnings", "removes semicolons"],
     "answerIndex": 1,
-    "answerText": "@media (prefers-color-scheme: dark) { ... }",
-    "explanation": "prefers-color-scheme is the correct media feature to adapt UI to user’s dark or light preference."
+    "answerText": "safer syntax",
+    "explanation": "Prevents silent errors like undeclared variables."
   },
   {
     "id": 68,
-    "topic": "CSS",
-    "difficulty": "advanced",
-    "question": "You want text to be truncated with an ellipsis if it overflows a single line. Which combination is needed?",
-    "options": [
-      "overflow: hidden; text-overflow: ellipsis;",
-      "white-space: nowrap; text-overflow: ellipsis;",
-      "overflow: hidden; white-space: nowrap; text-overflow: ellipsis;",
-      "text-overflow: ellipsis; display: block;"
-    ],
-    "answerIndex": 2,
-    "answerText": "overflow: hidden; white-space: nowrap; text-overflow: ellipsis;",
-    "explanation": "Ellipsis requires overflow hidden (or scroll), no wrapping (nowrap), and text-overflow: ellipsis on a block or inline-block element with constrained width."
+    "topic": "Mixed",
+    "difficulty": "medium",
+    "question": "Which phase browser constructs DOM?",
+    "options": ["Parsing HTML", "After CSS loaded", "After JS executed", "On click"],
+    "answerIndex": 0,
+    "answerText": "Parsing HTML",
+    "explanation": "DOM tree built as HTML parses top-down."
   },
   {
     "id": 69,
-    "topic": "CSS",
-    "difficulty": "advanced",
-    "question": "What does justify-content: space-between do in a flex container?",
-    "options": [
-      "Centers items along the cross axis",
-      "Distributes items with equal space between them, no space at edges",
-      "Distributes items with equal space around them including edges",
-      "Aligns items to the start"
-    ],
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Promise.all rejects when?",
+    "options": ["All reject", "One rejects", "Timeout", "Syntax error"],
     "answerIndex": 1,
-    "answerText": "Distributes items with equal space between them, no space at edges",
-    "explanation": "space-between places the first item at the start, last at the end, and distributes equal space only between items, not at container edges."
+    "answerText": "One rejects",
+    "explanation": "Any rejection → entire chain fails."
   },
   {
     "id": 70,
     "topic": "CSS",
-    "difficulty": "advanced",
-    "question": "You want child elements of a grid to overlap in the same cell. What do you need?",
-    "options": [
-      "Use z-index on items, allow them to share the same grid-area",
-      "Use float on children",
-      "Use display: flex on the grid container",
-      "Use position: static on children"
-    ],
-    "answerIndex": 0,
-    "answerText": "Use z-index on items, allow them to share the same grid-area",
-    "explanation": "Multiple grid items can occupy the same grid area; z-index then controls their stacking. Floats or flexbox aren’t necessary."
+    "difficulty": "medium",
+    "question": "transition:0.3s affects?",
+    "options": ["instant change", "smooth animation", "no effect", "grid layout only"],
+    "answerIndex": 1,
+    "answerText": "smooth animation",
+    "explanation": "Transition animates property changes over 0.3 seconds."
   },
-  {
+   {
     "id": 71,
     "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "What is logged?\n\nlet x = 10;\n(function () {\n  console.log(x);\n  let x = 20;\n})();\n",
-    "options": [
-      "10",
-      "20",
-      "undefined",
-      "ReferenceError"
-    ],
-    "answerIndex": 3,
-    "answerText": "ReferenceError",
-    "explanation": "let is hoisted but not initialized, creating a temporal dead zone until its declaration line. Accessing x before initialization in the same scope throws ReferenceError, even though outer x exists."
+    "difficulty": "medium",
+    "question": "Which keyword creates a constant variable?",
+    "options": ["var", "let", "const", "static"],
+    "answerIndex": 2,
+    "answerText": "const",
+    "explanation": "const prevents reassignment but not mutation of objects."
   },
   {
     "id": 72,
-    "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "What will be logged?\n\nconsole.log(1 < 2 < 3);\nconsole.log(3 > 2 > 1);\n",
-    "options": [
-      "true true",
-      "true false",
-      "false true",
-      "false false"
-    ],
-    "answerIndex": 1,
-    "answerText": "true false",
-    "explanation": "1 < 2 is true, true < 3 becomes 1 < 3 which is true. 3 > 2 is true, true > 1 becomes 1 > 1 which is false."
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Which flex property defines distribution along main-axis?",
+    "options": ["align-items", "margin-center", "justify-content", "flex-flow"],
+    "answerIndex": 2,
+    "answerText": "justify-content",
+    "explanation": "justify-content controls alignment along the main (row/column) axis."
   },
   {
     "id": 73,
-    "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "What does the optional chaining operator ?. do?",
-    "options": [
-      "Throws an error if a property is missing",
-      "Returns undefined instead of throwing when accessing properties on null/undefined",
-      "Returns null instead of undefined",
-      "Performs type checking"
-    ],
+    "topic": "HTML",
+    "difficulty": "medium",
+    "question": "Which attribute opens link in new tab?",
+    "options": ["open='_blank'", "target='_blank'", "href='_new'", "rel='tab'"],
     "answerIndex": 1,
-    "answerText": "Returns undefined instead of throwing when accessing properties on null/undefined",
-    "explanation": "obj?.prop stops evaluation and yields undefined if obj is null or undefined, avoiding TypeError."
+    "answerText": "target='_blank'",
+    "explanation": "target=_blank opens link in separate browser tab."
   },
   {
     "id": 74,
     "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "What is logged?\n\nconst a = { n: 1 };\nconst b = a;\nb.n = 2;\nconsole.log(a.n);\n",
-    "options": [
-      "1",
-      "2",
-      "undefined",
-      "NaN"
-    ],
+    "difficulty": "medium",
+    "question": "Which loop stops after condition is false?",
+    "options": ["do..while", "while", "foreach does always", "reduce always"],
     "answerIndex": 1,
-    "answerText": "2",
-    "explanation": "a and b reference the same object. Changing b.n modifies the same object, so a.n is also 2."
+    "answerText": "while",
+    "explanation": "while checks before execution; do..while runs at least once."
   },
   {
     "id": 75,
-    "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "What is the output?\n\nconsole.log('5' - 1);\nconsole.log('5' + 1);\n",
-    "options": [
-      "4 and 6",
-      "4 and '51'",
-      "NaN and '51'",
-      "'51' and 4"
-    ],
-    "answerIndex": 1,
-    "answerText": "4 and '51'",
-    "explanation": "The - operator forces numeric coercion: '5' - 1 is 4. The + operator with a string performs concatenation: '5' + 1 is '51'."
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Which sets shadow behind elements?",
+    "options": ["text-shadow", "background-shadow", "box-shadow", "element-shadow"],
+    "answerIndex": 2,
+    "answerText": "box-shadow",
+    "explanation": "text-shadow affects only text; box-shadow affects full element."
   },
+
   {
     "id": 76,
     "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "What is true about import and export in ES modules?",
-    "options": [
-      "Imports are hoisted and executed before other code",
-      "Imports can be used conditionally inside if blocks",
-      "Exports must always be default",
-      "Imports can be used without type='module'"
-    ],
-    "answerIndex": 0,
-    "answerText": "Imports are hoisted and executed before other code",
-    "explanation": "ES module imports are static and hoisted, resolved before code execution. They cannot be conditionally declared with if at top level."
+    "difficulty": "medium",
+    "question": "Which method removes first item of array?",
+    "options": ["pop()", "shift()", "splice()", "split()"],
+    "answerIndex": 1,
+    "answerText": "shift()",
+    "explanation": "shift removes first, pop removes last."
   },
   {
     "id": 77,
-    "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "What will be logged?\n\nfunction test() {\n  console.log(this === window);\n}\n\ntest();\n",
-    "options": [
-      "Always true",
-      "Always false",
-      "true in non-strict mode, false in strict mode",
-      "Throws error"
-    ],
-    "answerIndex": 2,
-    "answerText": "true in non-strict mode, false in strict mode",
-    "explanation": "In sloppy mode, calling a function without an explicit receiver binds this to the global object (window in browsers). In strict mode, this is undefined."
+    "topic": "HTML",
+    "difficulty": "medium",
+    "question": "Role of <meta charset='UTF-8'>?",
+    "options": ["Cache memory", "Multi-language support", "SEO", "CSS import"],
+    "answerIndex": 1,
+    "answerText": "Multi-language support",
+    "explanation": "UTF-8 encoding supports almost all characters worldwide."
   },
   {
     "id": 78,
-    "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "Which method attaches an event handler that runs at most once for a given element and event type?",
-    "options": [
-      "element.addEventListener('click', handler, { once: true })",
-      "element.onclick = handlerOnce;",
-      "element.addEventListenerOnce('click', handler);",
-      "element.addEventOnceListener('click', handler);"
-    ],
-    "answerIndex": 0,
-    "answerText": "element.addEventListener('click', handler, { once: true })",
-    "explanation": "The options object { once: true } instructs the browser to automatically remove the listener after it fires once."
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "What does z-index control?",
+    "options": ["Border depth", "Stacking order", "Display speed", "CSS CPU load"],
+    "answerIndex": 1,
+    "answerText": "Stacking order",
+    "explanation": "Higher z-index appears above overlapping lower ones."
   },
   {
     "id": 79,
     "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "What will be logged?\n\nconsole.log('start');\nsetTimeout(() => console.log('timeout'), 0);\nPromise.resolve().then(() => console.log('promise'));\nconsole.log('end');\n",
-    "options": [
-      "start end timeout promise",
-      "start end promise timeout",
-      "start promise end timeout",
-      "promise start end timeout"
-    ],
-    "answerIndex": 1,
-    "answerText": "start end promise timeout",
-    "explanation": "Synchronous logs run first: 'start', 'end'. Then microtasks (promise callbacks) run: 'promise'. Then macrotasks (timeout): 'timeout'."
+    "difficulty": "medium",
+    "question": "Which object handles async network calls?",
+    "options": ["Date", "DOMParser", "fetch API", "Math"],
+    "answerIndex": 2,
+    "answerText": "fetch API",
+    "explanation": "fetch returns a Promise for HTTP requests."
   },
   {
     "id": 80,
-    "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "What does the following code do?\n\nconst controller = new AbortController();\nfetch('/api/data', { signal: controller.signal });\ncontroller.abort();\n",
-    "options": [
-      "Starts the request and lets it finish normally",
-      "Cancels the fetch request if it is still in progress",
-      "Retries the fetch request",
-      "Prevents future fetch calls globally"
-    ],
-    "answerIndex": 1,
-    "answerText": "Cancels the fetch request if it is still in progress",
-    "explanation": "AbortController provides a signal that can be used by fetch to abort an in-progress request. Calling controller.abort() rejects the fetch promise with an AbortError."
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Which unit is relative to parent font size?",
+    "options": ["px", "rem", "em", "vh"],
+    "answerIndex": 2,
+    "answerText": "em",
+    "explanation": "1em equals parent's computed font-size."
   },
+
   {
     "id": 81,
-    "topic": "JavaScript DOM",
-    "difficulty": "advanced",
-    "question": "Which DOM API allows you to listen for events during the capturing phase instead of bubbling by default?",
-    "options": [
-      "addEventListener(event, handler, true)",
-      "attachEvent(event, handler)",
-      "onEvent(handler)",
-      "addListener(handler, captureOnly)"
-    ],
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Arrow functions do NOT have?",
+    "options": ["this", "return", "execution", "closures"],
     "answerIndex": 0,
-    "answerText": "addEventListener(event, handler, true)",
-    "explanation": "Passing true OR {capture: true} as the 3rd parameter makes the event fire during capturing instead of bubbling."
+    "answerText": "this",
+    "explanation": "Arrow functions have lexical this inherited from parent."
   },
   {
     "id": 82,
-    "topic": "JavaScript DOM",
-    "difficulty": "advanced",
-    "question": "Which method removes a DOM node **safely**, regardless of its parent reference?",
-    "options": [
-      "element.parentNode.removeChild(element)",
-      "element.remove()",
-      "element.innerHTML = ''",
-      "delete element"
-    ],
+    "topic": "HTML",
+    "difficulty": "medium",
+    "question": "What does <label> improve?",
+    "options": ["Security", "Accessibility", "Animations", "Performance"],
     "answerIndex": 1,
-    "answerText": "element.remove()",
-    "explanation": "The .remove() method directly deletes the node without requiring parent reference. parentNode.removeChild works but requires parent access."
+    "answerText": "Accessibility",
+    "explanation": "Helps screen readers and allows clicking to focus input."
   },
   {
     "id": 83,
-    "topic": "JavaScript OOP",
-    "difficulty": "advanced",
-    "question": "What happens when class methods use arrow functions instead of normal functions?",
-    "options": [
-      "this loses binding",
-      "this always refers to global",
-      "this is lexically bound to instance",
-      "class fails to instantiate"
-    ],
-    "answerIndex": 2,
-    "answerText": "this is lexically bound to instance",
-    "explanation": "Arrow functions don’t get their own this. They inherit this from class instance, often used to avoid manual .bind(this)."
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "border-box sizing means?",
+    "options": ["Padding adds extra size", "Width includes padding + border", "No margins allowed", "Rounded only"],
+    "answerIndex": 1,
+    "answerText": "Width includes padding + border",
+    "explanation": "Makes layout predictable preventing box growth."
   },
   {
     "id": 84,
-    "topic": "JavaScript OOP",
-    "difficulty": "advanced",
-    "question": "What is TRUE about prototype inheritance?",
-    "options": [
-      "Objects inherit only methods, not properties",
-      "Objects inherit from their prototype chain",
-      "Prototype is copied into every object",
-      "Prototype only exists for arrays"
-    ],
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "which returns array length?",
+    "options": ["size()", ".length", ".count()", "getLength()"],
     "answerIndex": 1,
-    "answerText": "Objects inherit from their prototype chain",
-    "explanation": "JavaScript uses prototype delegation. Objects link to prototypes, not copy them."
+    "answerText": ".length",
+    "explanation": "length property returns total elements."
   },
   {
     "id": 85,
-    "topic": "JavaScript async",
-    "difficulty": "advanced",
-    "question": "Which executes first?",
-    "options": [
-      "setTimeout(..., 0)",
-      "Promise.then(...)",
-      "requestAnimationFrame",
-      "setInterval"
-    ],
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "flex-direction:column arranges?",
+    "options": ["Horizontal", "Vertical", "Grid", "Inline only"],
     "answerIndex": 1,
-    "answerText": "Promise.then(...)",
-    "explanation": "Promise callbacks go to microtask queue — executed before macrotasks like setTimeout."
+    "answerText": "Vertical",
+    "explanation": "Direction changes main axis."
   },
+
   {
     "id": 86,
-    "topic": "CSS Layout",
-    "difficulty": "advanced",
-    "question": "Which CSS layout handles unknown number of columns best in responsive UI?",
-    "options": [
-      "flex-wrap",
-      "grid-auto-flow: column",
-      "display: inline-block",
-      "grid-template-columns: repeat(auto-fit,minmax(...))"
-    ],
-    "answerIndex": 3,
-    "answerText": "grid-template-columns: repeat(auto-fit,minmax(...))",
-    "explanation": "auto-fit + minmax makes grid auto-adjust columns dynamically for all screen widths."
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "typeof undefined === ?",
+    "options": ["object", "string", "undefined", "null"],
+    "answerIndex": 2,
+    "answerText": "undefined",
+    "explanation": "Type of undefined is literally undefined."
   },
   {
     "id": 87,
-    "topic": "CSS",
-    "difficulty": "advanced",
-    "question": "Which pseudo-class selects elements only when hovered using keyboard focus?",
-    "options": [
-      ":hover",
-      ":focus",
-      ":focus-visible",
-      ":focus-within"
-    ],
+    "topic": "HTML",
+    "difficulty": "medium",
+    "question": "Which element defines navigation links?",
+    "options": ["<navigate>", "<menu>", "<nav>", "<link>"],
     "answerIndex": 2,
-    "answerText": ":focus-visible",
-    "explanation": ":focus-visible applies only when focus comes through keyboard—not mouse click, improving accessibility."
+    "answerText": "<nav>",
+    "explanation": "Semantic structure improves readability & SEO."
   },
   {
     "id": 88,
-    "topic": "CSS Animations",
-    "difficulty": "advanced",
-    "question": "Which condition allows CSS animations to run at 60fps most consistently?",
-    "options": [
-      "Animating margin",
-      "Animating width",
-      "Animating transform + opacity",
-      "Animating left property"
-    ],
-    "answerIndex": 2,
-    "answerText": "Animating transform + opacity",
-    "explanation": "transform + opacity avoids layout reflow and triggers GPU acceleration."
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Which property makes grid responsive automatically?",
+    "options": ["auto-fill + minmax()", "float:left", "display:inline-block", "position:absolute"],
+    "answerIndex": 0,
+    "answerText": "auto-fill + minmax()",
+    "explanation": "It adapts columns based on available width."
   },
   {
     "id": 89,
-    "topic": "CSS Selectors",
-    "difficulty": "advanced",
-    "question": "Which selector targets direct next sibling only?",
-    "options": [
-      "A ~ B",
-      "A + B",
-      "A > B",
-      ".A #B"
-    ],
-    "answerIndex": 1,
-    "answerText": "A + B",
-    "explanation": "A + B selects the immediate sibling right after A."
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Which returns true?",
+    "options": ["[] == 0", "[] === 0", "null == undefined", "Both A & C"],
+    "answerIndex": 3,
+    "answerText": "Both A & C",
+    "explanation": "Coercion: []→0 and null == undefined is true."
   },
   {
     "id": 90,
-    "topic": "CSS Units",
-    "difficulty": "advanced",
-    "question": "Which unit scales with viewport **height**?",
-    "options": [
-      "vw",
-      "vh",
-      "rem",
-      "em"
-    ],
-    "answerIndex": 1,
-    "answerText": "vh",
-    "explanation": "1vh = 1% of viewport height."
+    "topic": "Mixed",
+    "difficulty": "medium",
+    "question": "DOM stands for?",
+    "options": ["Document Object Model", "Data Object Manager", "DOM Output Module", "Digital Object Memory"],
+    "answerIndex": 0,
+    "answerText": "Document Object Model",
+    "explanation": "Browser creates a tree representation of HTML."
   },
+
   {
     "id": 91,
-    "topic": "HTML Performance",
-    "difficulty": "advanced",
-    "question": "Which improves performance by delaying image loading until in-view?",
-    "options": [
-      "loading='lazy'",
-      "fetch='lazy'",
-      "preload='true'",
-      "cache='viewport'"
-    ],
-    "answerIndex": 0,
-    "answerText": "loading='lazy'",
-    "explanation": "Native lazy image loading avoids downloading until near viewport -> faster page load."
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Which selects immediate siblings?",
+    "options": ["A ~ B", "A + B", "A > B", "**"],
+    "answerIndex": 1,
+    "answerText": "A + B",
+    "explanation": "Matches B right after A."
   },
   {
     "id": 92,
-    "topic": "HTML Canvas",
-    "difficulty": "advanced",
-    "question": "What happens if canvas width is changed via CSS instead of HTML attribute?",
-    "options": [
-      "Canvas redraws automatically",
-      "Canvas will stretch and blur",
-      "Canvas becomes unresponsive",
-      "Nothing changes"
-    ],
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "What does array.includes(x) return?",
+    "options": ["index", "boolean", "string", "length"],
     "answerIndex": 1,
-    "answerText": "Canvas will stretch and blur",
-    "explanation": "CSS scaling affects display surface without resizing drawing resolution — results in blur."
+    "answerText": "boolean",
+    "explanation": "includes checks presence and returns true/false."
   },
   {
     "id": 93,
-    "topic": "JavaScript Memory",
-    "difficulty": "advanced",
-    "question": "Which causes memory leaks most easily?",
-    "options": [
-      "setTimeout not cleared",
-      "Detached DOM nodes still referenced",
-      "Unused variables",
-      "const instead of let"
-    ],
+    "topic": "HTML",
+    "difficulty": "medium",
+    "question": "<aside> used for?",
+    "options": ["Main content", "Secondary content", "Header", "Footer scripts"],
     "answerIndex": 1,
-    "answerText": "Detached DOM nodes still referenced",
-    "explanation": "If GC can't release due to references, memory sticks. Detached nodes are classic leak cases."
+    "answerText": "Secondary content",
+    "explanation": "<aside> often holds ads, sidebars or references."
   },
   {
     "id": 94,
-    "topic": "JavaScript Web APIs",
-    "difficulty": "advanced",
-    "question": "Which Web Worker behavior is true?",
-    "options": [
-      "Workers can access DOM",
-      "Workers block main thread",
-      "Workers run JS on separate threads",
-      "Workers pause on Promise wait"
-    ],
-    "answerIndex": 2,
-    "answerText": "Workers run JS on separate threads",
-    "explanation": "WebWorkers allow concurrency — but no DOM access. Message passing is required."
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "cursor:pointer applies to?",
+    "options": ["background", "interactive hover", "opacity", "padding only"],
+    "answerIndex": 1,
+    "answerText": "interactive hover",
+    "explanation": "Shows a hand pointer encouraging click."
   },
   {
     "id": 95,
-    "topic": "JavaScript Fetch",
-    "difficulty": "advanced",
-    "question": "fetch() returns:",
-    "options": [
-      "XHR instance",
-      "Promise<Response>",
-      "ReadableStream only",
-      "JSON directly"
-    ],
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Promise.then returns?",
+    "options": ["Same Promise", "New Promise", "only success", "string"],
     "answerIndex": 1,
-    "answerText": "Promise<Response>",
-    "explanation": "You must still await response.json() ≠ auto-parse."
+    "answerText": "New Promise",
+    "explanation": "Supports chaining because .then returns a Promise."
   },
+
   {
     "id": 96,
-    "topic": "JavaScript Storage",
-    "difficulty": "advanced",
-    "question": "Which persists even after tab/session closed?",
-    "options": [
-      "sessionStorage",
-      "localStorage",
-      "cookies with no expiry",
-      "DOMCache"
-    ],
-    "answerIndex": 1,
-    "answerText": "localStorage",
-    "explanation": "sessionStorage clears on tab close. localStorage is persistent."
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Which triggers hardware acceleration?",
+    "options": ["transform:translate3d()", "margin:10px", "width:100%", "float:left"],
+    "answerIndex": 0,
+    "answerText": "transform:translate3d()",
+    "explanation": "3D transform pushes element to GPU layer."
   },
   {
     "id": 97,
-    "topic": "JavaScript Error Handling",
-    "difficulty": "advanced",
-    "question": "Which catches async functions properly?",
-    "options": [
-      "try { asyncFn(); } catch {}",
-      "asyncFn().catch(...)",
-      "asyncFn().errorHandler()",
-      "asyncFn(); // auto handled"
-    ],
+    "topic": "HTML",
+    "difficulty": "medium",
+    "question": "If image fails, browser shows?",
+    "options": ["404", "alt text", "empty box", "console.log"],
     "answerIndex": 1,
-    "answerText": "asyncFn().catch(...)",
-    "explanation": "Without await, try/catch won’t catch promise failures. .catch handles rejected promises."
+    "answerText": "alt text",
+    "explanation": "alt improves accessibility and fallback."
   },
   {
     "id": 98,
-    "topic": "JavaScript Optimization",
-    "difficulty": "advanced",
-    "question": "Which improves JS execution speed?",
-    "options": [
-      "Heavy DOM manipulation in loops",
-      "Batch DOM updates using DocumentFragment",
-      "Resize window continuously",
-      "Infinite recursion"
-    ],
-    "answerIndex": 1,
-    "answerText": "Batch DOM updates using DocumentFragment",
-    "explanation": "DOM is expensive. Update in bulk → fewer reflows → faster."
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Which operator spreads iterable?",
+    "options": ["...", "***", "spread()", "@@"],
+    "answerIndex": 0,
+    "answerText": "...",
+    "explanation": "Spread operator expands elements into places."
   },
   {
     "id": 99,
-    "topic": "CSS Rendering",
-    "difficulty": "advanced",
-    "question": "Which triggers **reflow**, the most expensive repaint operation?",
-    "options": [
-      "Changing transform",
-      "Changing opacity",
-      "Changing width/height",
-      "Using will-change"
-    ],
-    "answerIndex": 2,
-    "answerText": "Changing width/height",
-    "explanation": "Layout properties affect entire DOM structure → causes reflow."
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Which defines gap between grid cells?",
+    "options": ["cell-gap", "grid-gap", "spacing", "border-radius"],
+    "answerIndex": 1,
+    "answerText": "grid-gap",
+    "explanation": "Renamed as gap in newer CSS."
   },
   {
     "id": 100,
-    "topic": "CSS Specificity",
-    "difficulty": "advanced",
-    "question": "Which selector has highest specificity?",
-    "options": [
-      ".header nav ul li a",
-      "#id .header a",
-      "header > nav > a",
-      "*#id .x"
-    ],
-    "answerIndex": 3,
-    "answerText": "*#id .x",
-    "explanation": "ID beats class, tag. Universal (*) doesn't add value, but ID presence makes it strongest."
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "JSON.parse converts?",
+    "options": ["object→string", "string→object", "number→string", "HTML→DOM"],
+    "answerIndex": 1,
+    "answerText": "string→object",
+    "explanation": "parse reads JSON format and makes JS object."
   },
+
   {
     "id": 101,
-    "topic": "CSS Flexbox",
-    "difficulty": "advanced",
-    "question": "Which flex property defines the initial size of an item before free space distribution?",
-    "options": ["flex-grow", "flex-basis", "flex-shrink", "order"],
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "rem based on?",
+    "options": ["viewport width", "root font-size", "parent width", "device DPI"],
     "answerIndex": 1,
-    "answerText": "flex-basis",
-    "explanation": "flex-basis defines the starting size of an element. flex-grow and flex-shrink adjust it based on remaining space."
+    "answerText": "root font-size",
+    "explanation": "rem gives consistent text scaling."
   },
   {
     "id": 102,
-    "topic": "CSS Grid",
-    "difficulty": "advanced",
-    "question": "What does grid-auto-flow: dense achieve?",
-    "options": ["Fills gaps by rearranging DOM order visually", "Forces equal column widths", "Disables row auto-placement", "Auto repeats grid template"],
-    "answerIndex": 0,
-    "answerText": "Fills gaps by rearranging DOM order visually",
-    "explanation": "dense tries to backfill holes in layout. The DOM order stays same logically, but layout compacts visually."
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Which method clones array shallowly?",
+    "options": ["arr.copy()", "[...arr]", "clone(arr)", "arr.pushCopy()"],
+    "answerIndex": 1,
+    "answerText": "[...arr]",
+    "explanation": "Spread operator duplicates element references."
   },
   {
     "id": 103,
-    "topic": "CSS Functions",
-    "difficulty": "advanced",
-    "question": "Which CSS function allows calculations using operators like + - * /?",
-    "options": ["max()", "var()", "calc()", "attr()"],
+    "topic": "HTML",
+    "difficulty": "medium",
+    "question": "Which tag defines footer section?",
+    "options": ["<bottom>", "<end>", "<footer>", "<foot>"],
     "answerIndex": 2,
-    "answerText": "calc()",
-    "explanation": "calc() supports arithmetic mixing units (px + %, etc.). var() only retrieves custom properties."
+    "answerText": "<footer>",
+    "explanation": "Semantic HTML for copyright, site info."
   },
   {
     "id": 104,
-    "topic": "CSS Variables",
-    "difficulty": "advanced",
-    "question": "Where must CSS custom properties be declared to be globally available?",
-    "options": [":root{}", "body{}", "html{}", "variables{}"],
-    "answerIndex": 0,
-    "answerText": ":root{}",
-    "explanation": ":root targets the top scope — variables cascade to all descendants."
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "calc() allows?",
+    "options": ["random values", "math expressions", "3D animation only", "filter only"],
+    "answerIndex": 1,
+    "answerText": "math expressions",
+    "explanation": "Supports + - * / mixing units."
   },
   {
     "id": 105,
-    "topic": "CSS Transitions",
-    "difficulty": "advanced",
-    "question": "Which property is NOT transitionable?",
-    "options": ["background-color", "max-height", "display", "opacity"],
-    "answerIndex": 2,
-    "answerText": "display",
-    "explanation": "display cannot animate. opacity, transform, color do animate."
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "event.preventDefault stops?",
+    "options": ["click", "default browser action", "JS execution", "CSS load"],
+    "answerIndex": 1,
+    "answerText": "default browser action",
+    "explanation": "Prevents form submit, link navigation etc."
   },
+
   {
     "id": 106,
-    "topic": "CSS Z-index",
-    "difficulty": "advanced",
-    "question": "Which creates a new stacking context?",
-    "options": ["z-index: 100;", "position: absolute;", "transform: scale(1);", "outline: 1px solid"],
-    "answerIndex": 2,
-    "answerText": "transform: scale(1);",
-    "explanation": "Transform triggers new stacking context. z-index alone only works if element is positioned."
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": ":hover applies when?",
+    "options": ["clicked", "cursor enters element", "page loads", "scroll end"],
+    "answerIndex": 1,
+    "answerText": "cursor enters element",
+    "explanation": "Hover triggers transition effects."
   },
   {
     "id": 107,
-    "topic": "CSS Pseudo-elements",
-    "difficulty": "advanced",
-    "question": "Which pseudo-element can insert generated content?",
-    "options": ["::before", "::after", "Both", "Neither"],
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Promise.finally runs?",
+    "options": ["only if resolved", "only if rejected", "always", "never"],
     "answerIndex": 2,
-    "answerText": "Both",
-    "explanation": "::before and ::after both support generated content via content property."
+    "answerText": "always",
+    "explanation": "finally executes regardless of state."
   },
   {
     "id": 108,
-    "topic": "CSS Layout",
-    "difficulty": "advanced",
-    "question": "What does contain: layout; do?",
-    "options": ["Creates a new formatting context", "Increases selector specificity", "Preloads layout engine", "Removes reflow requirement"],
-    "answerIndex": 0,
-    "answerText": "Creates a new formatting context",
-    "explanation": "contain isolates element — improves rendering performance by limiting layout recalculation."
+    "topic": "HTML",
+    "difficulty": "medium",
+    "question": "Best practice for external JS?",
+    "options": ["inline", "<script src='file.js'>", "inside <head>", "CSS file"],
+    "answerIndex": 1,
+    "answerText": "<script src='file.js'>",
+    "explanation": "External scripts allow caching and separation."
   },
   {
     "id": 109,
-    "topic": "CSS Performance",
-    "difficulty": "advanced",
-    "question": "Which is cheapest for the browser to render?",
-    "options": ["transform: translate()", "top: 50px", "width: auto to 100px", "margin animation"],
-    "answerIndex": 0,
-    "answerText": "transform: translate()",
-    "explanation": "Transform avoids layout, paint cycles. top modifies rendering tree → slower."
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "object-fit:cover ensures?",
+    "options": ["No crop", "Fill container cropping if needed", "Stretch only", "Center always"],
+    "answerIndex": 1,
+    "answerText": "Fill container cropping if needed",
+    "explanation": "Ideal for responsive images."
   },
   {
     "id": 110,
-    "topic": "CSS Shadows",
-    "difficulty": "advanced",
-    "question": "Which shadow renders fastest?",
-    "options": ["box-shadow: 0 0 50px", "box-shadow: 0 0 5px", "box-shadow inset blur heavy", "multiple stacked shadows"],
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "event.target refers to?",
+    "options": ["listener element", "deepest triggered element", "window always", "parent node"],
     "answerIndex": 1,
-    "answerText": "box-shadow: 0 0 5px",
-    "explanation": "Lower blur radius = fewer pixels to compute, fastest."
+    "answerText": "deepest triggered element",
+    "explanation": "Useful in event delegation."
   },
+
   {
     "id": 111,
-    "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "Which returns NaN?",
-    "options": ["parseInt('25px')", "Number('25px')", "parseFloat('10.5 apples')", "+'3'"],
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "grid-auto-rows sets?",
+    "options": ["column size", "row height for auto rows", "cell padding", "gap default"],
     "answerIndex": 1,
-    "answerText": "Number('25px')",
-    "explanation": "Number requires pure numeric input. parseInt/parseFloat stop at invalid char."
+    "answerText": "row height for auto rows",
+    "explanation": "Used when implicit rows are created."
   },
   {
     "id": 112,
     "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "Which modifies the original array?",
-    "options": ["map()", "filter()", "slice()", "splice()"],
-    "answerIndex": 3,
-    "answerText": "splice()",
-    "explanation": "splice removes/inserts elements in the existing array. Others return new arrays."
+    "difficulty": "medium",
+    "question": "Which converts number→string?",
+    "options": ["String()", "toString()", "Both", "JSON.stringify only"],
+    "answerIndex": 2,
+    "answerText": "Both",
+    "explanation": "String(n) and n.toString() both work."
   },
   {
     "id": 113,
-    "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "What will console.log([1,2] == [1,2]) output?",
-    "options": ["true", "false", "depends", "error"],
+    "topic": "HTML",
+    "difficulty": "medium",
+    "question": "SEO prefers which tag for headings?",
+    "options": ["<b>", "<h1>-<h6>", "<p>", "<strong>"],
     "answerIndex": 1,
-    "answerText": "false",
-    "explanation": "Array comparison is reference-based. Different arrays → false."
+    "answerText": "<h1>-<h6>",
+    "explanation": "Heading hierarchy improves crawl structure."
   },
   {
     "id": 114,
-    "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "Which pattern prevents callback hell?",
-    "options": ["nested functions", "promises", "setTimeout chaining", "forEach recursion"],
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "media queries used for?",
+    "options": ["Fonts only", "Responsive layouts", "Database", "Forms"],
     "answerIndex": 1,
-    "answerText": "promises",
-    "explanation": "Promises flatten async flow. async/await built on top of them."
+    "answerText": "Responsive layouts",
+    "explanation": "@media detects viewport breakpoints."
   },
   {
     "id": 115,
     "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "console.log(Object.is(NaN,NaN)) gives?",
-    "options": ["true", "false", "undefined", "error"],
-    "answerIndex": 0,
-    "answerText": "true",
-    "explanation": "Object.is considers NaN equal to itself, unlike ===."
+    "difficulty": "medium",
+    "question": "How to copy array without reference?",
+    "options": ["arr2 = arr", "arr2 = [...arr]", "arr2 = arr.copy()", "None"],
+    "answerIndex": 1,
+    "answerText": "arr2 = [...arr]",
+    "explanation": "Spread creates shallow duplicate not pointer reference."
   },
+
   {
     "id": 116,
-    "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "Which is true for WeakMap?",
-    "options": ["Keys must be strings", "Keys must be objects", "Clears automatically", "Both B and C"],
-    "answerIndex": 3,
-    "answerText": "Both B and C",
-    "explanation": "WeakMap keys are objects, and garbage collected if unreachable."
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "transform:scale(2) means?",
+    "options": ["Half size", "Double size", "Rotate 90deg", "Flip horizontally"],
+    "answerIndex": 1,
+    "answerText": "Double size",
+    "explanation": "Scaling stretches content proportionally."
   },
   {
     "id": 117,
     "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "Which returns 'function'?",
-    "options": ["typeof class A {}", "typeof []", "typeof NaN", "typeof null"],
-    "answerIndex": 0,
-    "answerText": "typeof class A {}",
-    "explanation": "Classes are functions under the hood. typeof null is 'object'."
+    "difficulty": "medium",
+    "question": "Which triggers reflow?",
+    "options": ["transform", "opacity", "width change", "visibility toggle"],
+    "answerIndex": 2,
+    "answerText": "width change",
+    "explanation": "Layout recalculation expensive vs transform/opacity."
   },
   {
     "id": 118,
-    "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "What do generators return?",
-    "options": ["Array", "Promise", "Iterator object", "DOM Node"],
+    "topic": "HTML",
+    "difficulty": "medium",
+    "question": "Which defines contact info?",
+    "options": ["<span>", "<footer>", "<address>", "<data>"],
     "answerIndex": 2,
-    "answerText": "Iterator object",
-    "explanation": "function* returns generator iterator → supports yield."
+    "answerText": "<address>",
+    "explanation": "Used for author or owner details."
   },
   {
     "id": 119,
-    "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "Promise.race resolves when:",
-    "options": ["all complete", "first settles", "first resolves only", "fastest microtask runs"],
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "backdrop-filter applies to?",
+    "options": ["foreground", "background behind element", "global", "text only"],
     "answerIndex": 1,
-    "answerText": "first settles",
-    "explanation": "Whichever resolves OR rejects first wins the race."
+    "answerText": "background behind element",
+    "explanation": "Used for blur-glass UI effects."
   },
   {
     "id": 120,
     "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "await 10 returns:",
-    "options": ["10", "Promise{10}", "undefined", "throws"],
-    "answerIndex": 0,
-    "answerText": "10",
-    "explanation": "await wraps primitive → Promise.resolve → resolves instantly."
+    "difficulty": "medium",
+    "question": "localStorage persists until?",
+    "options": ["Tab close", "Manual removal", "Device off", "DOM reload"],
+    "answerIndex": 1,
+    "answerText": "Manual removal",
+    "explanation": "localStorage persists indefinitely unless cleared."
   },
+
   {
     "id": 121,
-    "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "Which is valid JSON?",
-    "options": [
-      "{name:'Basu'}",
-      "{'name':'Basu'}",
-      "{\"name\":\"Basu\"}",
-      "{name=Basu}"
-    ],
-    "answerIndex": 2,
-    "answerText": "{\"name\":\"Basu\"}",
-    "explanation": "JSON requires double quotes ONLY."
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Which creates new stacking context?",
+    "options": ["z-index", "opacity < 1", "border", "display:block"],
+    "answerIndex": 1,
+    "answerText": "opacity < 1",
+    "explanation": "Opacity, transform, filter create new stacking context."
   },
   {
     "id": 122,
     "topic": "JavaScript",
-    "difficulty": "advanced",
-    "question": "Which is event delegation?",
-    "options": [
-      "Attaching events to each child",
-      "Event handled at parent via bubbling",
-      "Capturing without handler",
-      "Inline onclick only"
-    ],
+    "difficulty": "hard",
+    "question": "Which runs first in event loop?",
+    "options": ["setTimeout", "Promise.then", "requestAnimationFrame", "setInterval"],
     "answerIndex": 1,
-    "answerText": "Event handled at parent via bubbling",
-    "explanation": "Parent listens, identifies target → efficient for dynamic children."
+    "answerText": "Promise.then",
+    "explanation": "Promise microtasks run before macrotasks like timers."
   },
   {
     "id": 123,
     "topic": "HTML",
-    "difficulty": "advanced",
-    "question": "Which input type validates URL format?",
-    "options": ["text", "email", "url", "search"],
-    "answerIndex": 2,
-    "answerText": "url",
-    "explanation": "type=url triggers built-in URL validation."
+    "difficulty": "hard",
+    "question": "IntersectionObserver used in?",
+    "options": ["lazy loading", "only SEO", "forms only", "CSS only"],
+    "answerIndex": 0,
+    "answerText": "lazy loading",
+    "explanation": "Detects element entering viewport."
   },
   {
     "id": 124,
-    "topic": "HTML",
-    "difficulty": "advanced",
-    "question": "Which element defines column headers in a table?",
-    "options": ["td", "th", "caption", "header"],
-    "answerIndex": 1,
-    "answerText": "th",
-    "explanation": "<th> defines header cells, read as headers by screen readers."
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Which is GPU-friendly animation?",
+    "options": ["width", "margin", "transform", "border"],
+    "answerIndex": 2,
+    "answerText": "transform",
+    "explanation": "Transform avoids full layout recalculation."
   },
   {
     "id": 125,
-    "topic": "HTML",
-    "difficulty": "advanced",
-    "question": "Best semantic way to wrap a blog article?",
-    "options": ["<section>", "<article>", "<div>", "<aside>"],
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Object.freeze() prevents?",
+    "options": ["property access", "modification", "iteration", "keys view"],
     "answerIndex": 1,
-    "answerText": "<article>",
-    "explanation": "<article> is for self-contained publishable content."
+    "answerText": "modification",
+    "explanation": "Freeze locks object but not deep nested children."
   },
+
   {
     "id": 126,
-    "topic": "HTML",
-    "difficulty": "advanced",
-    "question": "Which attribute prevents form submission if field empty?",
-    "options": ["required", "disable", "mandatory", "min"],
-    "answerIndex": 0,
-    "answerText": "required",
-    "explanation": "required performs client-side validation."
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "grid-auto-flow:dense means?",
+    "options": ["keep order", "fill empty grid gaps", "disable grid", "center rows"],
+    "answerIndex": 1,
+    "answerText": "fill empty grid gaps",
+    "explanation": "Dense tries compacting layout visually."
   },
   {
     "id": 127,
-    "topic": "HTML",
-    "difficulty": "advanced",
-    "question": "Which tag embeds external HTML document?",
-    "options": ["<object>", "<embed>", "<iframe>", "<import>"],
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "WeakMap keys must be?",
+    "options": ["string", "number", "object", "any type"],
     "answerIndex": 2,
-    "answerText": "<iframe>",
-    "explanation": "iframe loads external pages sandboxed inside."
+    "answerText": "object",
+    "explanation": "Allows GC reclaim when object unreachable."
   },
   {
     "id": 128,
     "topic": "HTML",
-    "difficulty": "advanced",
-    "question": "Which attribute is needed for file uploads?",
-    "options": [
-      "method='post' enctype='multipart/form-data'",
-      "method='get'",
-      "action='file'",
-      "type='upload'"
-    ],
-    "answerIndex": 0,
-    "answerText": "method='post' enctype='multipart/form-data'",
-    "explanation": "multipart/form-data required to send binary file streams."
+    "difficulty": "hard",
+    "question": "ARIA role improves?",
+    "options": ["CSS output", "accessibility semantics", "JS loops", "SEO ranking direct"],
+    "answerIndex": 1,
+    "answerText": "accessibility semantics",
+    "explanation": "Used for screen reader assistance."
   },
   {
     "id": 129,
-    "topic": "Web Security",
-    "difficulty": "advanced",
-    "question": "Which prevents XSS MOST effectively?",
-    "options": ["innerHTML injection", "Content-Security-Policy", "alert sanitizing", "frame embedding"],
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "contain:layout means?",
+    "options": ["no overflow", "isolated layout", "no flex", "no grid"],
     "answerIndex": 1,
-    "answerText": "Content-Security-Policy",
-    "explanation": "CSP limits executable sources → strong XSS defense."
+    "answerText": "isolated layout",
+    "explanation": "Prevents reflows spreading outside element."
   },
   {
     "id": 130,
-    "topic": "Web Security",
-    "difficulty": "advanced",
-    "question": "Which cookie attribute prevents sending cookie over HTTP?",
-    "options": ["Secure", "HttpOnly", "SameSite", "Domain"],
-    "answerIndex": 0,
-    "answerText": "Secure",
-    "explanation": "Secure means only transmitted over HTTPS not plain HTTP."
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Promise.race settles when?",
+    "options": ["all resolve", "any settles first", "none resolve", "loop finishes"],
+    "answerIndex": 1,
+    "answerText": "any settles first",
+    "explanation": "First resolve/reject decides outcome."
   },
+
   {
     "id": 131,
-    "topic": "Web Security",
-    "difficulty": "advanced",
-    "question": "Which prevents JavaScript from reading cookies?",
-    "options": ["Secure", "HttpOnly", "SameSite", "Max-age"],
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "repaint vs reflow difference?",
+    "options": ["same", "repaint visual only, reflow layout", "reflow color only", "repaint layout only"],
     "answerIndex": 1,
-    "answerText": "HttpOnly",
-    "explanation": "HttpOnly restricts cookie access from JS → resists XSS theft."
+    "answerText": "repaint visual only, reflow layout",
+    "explanation": "Reflow affects positions/size → slower."
   },
   {
     "id": 132,
-    "topic": "Web Security",
-    "difficulty": "advanced",
-    "question": "SameSite=strict prevents?",
-    "options": ["Cookie theft", "Cross-site request usage", "HTTPS sniffing", "SQL injection"],
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Generator functions return?",
+    "options": ["Promise", "Iterator", "XHR", "DOM node"],
     "answerIndex": 1,
-    "answerText": "Cross-site request usage",
-    "explanation": "SameSite blocks third-party cookie use → helps stop CSRF."
+    "answerText": "Iterator",
+    "explanation": "yield pauses execution producing iterable."
   },
   {
     "id": 133,
-    "topic": "HTML APIs",
-    "difficulty": "advanced",
-    "question": "Navigator.onLine indicates:",
-    "options": ["True internet connectivity guaranteed", "Browser thinks network available", "DNS reachable", "WiFi strength good"],
-    "answerIndex": 1,
-    "answerText": "Browser thinks network available",
-    "explanation": "onLine only flags network state, NOT actual access success."
+    "topic": "HTML",
+    "difficulty": "hard",
+    "question": "Service Worker required for?",
+    "options": ["offline caching", "SEO only", "smooth animation", "JS compilation"],
+    "answerIndex": 0,
+    "answerText": "offline caching",
+    "explanation": "Enables PWAs, push, caching strategies."
   },
   {
     "id": 134,
-    "topic": "Browser",
-    "difficulty": "advanced",
-    "question": "LocalStorage max size approx?",
-    "options": ["100KB", "1MB", "5-10MB", "Unlimited"],
-    "answerIndex": 2,
-    "answerText": "5-10MB",
-    "explanation": "Browsers usually allocate 5-10MB depending on vendor."
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "CSS custom property fallback syntax?",
+    "options": ["var(--x||fallback)", "var(--x,fallback)", "var(--fallback-x)", "var:fallback"],
+    "answerIndex": 1,
+    "answerText": "var(--x,fallback)",
+    "explanation": "If variable undefined fallback is used."
   },
   {
     "id": 135,
-    "topic": "Browser",
-    "difficulty": "advanced",
-    "question": "sessionStorage persists until?",
-    "options": ["System shutdown", "Tab close", "Browser uninstall", "Cache clear only"],
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "setTimeout(...,0) runs?",
+    "options": ["instantly", "after current call stack", "before code", "blocks JS"],
     "answerIndex": 1,
-    "answerText": "Tab close",
-    "explanation": "sessionStorage is per-tab alive until closed."
+    "answerText": "after current call stack",
+    "explanation": "Microtasks & sync code execute before it."
   },
+
   {
     "id": 136,
-    "topic": "Protocols",
-    "difficulty": "advanced",
-    "question": "HTTPS mainly protects against?",
-    "options": ["SQL injection", "MITM sniffing", "CSS breakage", "Disk corruption"],
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Which layout supports masonry-like placement?",
+    "options": ["flex", "grid with dense", "table", "inline-block"],
     "answerIndex": 1,
-    "answerText": "MITM sniffing",
-    "explanation": "HTTPS encrypts traffic → reduces man-in-the-middle risks."
+    "answerText": "grid with dense",
+    "explanation": "dense backfills gaps like Pinterest style."
   },
   {
     "id": 137,
-    "topic": "Performance",
-    "difficulty": "advanced",
-    "question": "Best tool to measure real rendering FPS?",
-    "options": ["console.log()", "Lighthouse", "DevTools Performance Panel", "F12 Sources"],
-    "answerIndex": 2,
-    "answerText": "DevTools Performance Panel",
-    "explanation": "Performance panel visualizes paint/layout FPS."
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "What is event delegation?",
+    "options": ["attach to children", "listen at parent & detect child target", "trigger both", "bubble stop"],
+    "answerIndex": 1,
+    "answerText": "listen at parent & detect child target",
+    "explanation": "Efficient for dynamic lists/events."
   },
   {
     "id": 138,
-    "topic": "Performance",
-    "difficulty": "advanced",
-    "question": "Which reduces bundle size most?",
-    "options": ["Tree-shaking", "More comments", "Minify HTML only", "More API calls"],
-    "answerIndex": 0,
-    "answerText": "Tree-shaking",
-    "explanation": "Tree-shaking removes unused code → least JS payload."
+    "topic": "HTML",
+    "difficulty": "hard",
+    "question": "HTTP/2 improvement?",
+    "options": ["slower", "multiplexed streams", "no caching", "JS disabled"],
+    "answerIndex": 1,
+    "answerText": "multiplexed streams",
+    "explanation": "Parallel requests in one TCP."
   },
   {
     "id": 139,
-    "topic": "Performance",
-    "difficulty": "advanced",
-    "question": "Critical CSS means?",
-    "options": ["All CSS loaded instantly", "Above-the-fold CSS inlined", "Only media queries", "CSS for responsive only"],
-    "answerIndex": 1,
-    "answerText": "Above-the-fold CSS inlined",
-    "explanation": "Critical path painting is faster when initial CSS inlined."
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "CSS specificity highest?",
+    "options": ["class", "tag", "inline style", "universal"],
+    "answerIndex": 2,
+    "answerText": "inline style",
+    "explanation": "Inline overrides class/id unless !important."
   },
   {
     "id": 140,
-    "topic": "WebSockets",
-    "difficulty": "advanced",
-    "question": "WebSockets best for?",
-    "options": ["Static sites", "Realtime bi-directional comm", "Serverless deployments", "Image hosting"],
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "JS heap stores?",
+    "options": ["primitives", "objects/functions", "DOM only", "binary only"],
     "answerIndex": 1,
-    "answerText": "Realtime bi-directional comm",
-    "explanation": "WebSockets keep persistent TCP → chat, live game sync."
+    "answerText": "objects/functions",
+    "explanation": "Primitives stored in stack, objects in heap."
   },
   {
     "id": 141,
-    "topic": "Service Workers",
-    "difficulty": "advanced",
-    "question": "Service workers run in?",
-    "options": ["Main JS thread", "Separate background thread", "DOM thread", "GPU thread"],
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Which symbol is used for comments in JS?",
+    "options": ["#", "//", "<!-- -->", "/*#*/"],
     "answerIndex": 1,
-    "answerText": "Separate background thread",
-    "explanation": "SW enables offline caching, push — no DOM access."
+    "answerText": "//",
+    "explanation": "Single-line JS comments use // ."
   },
   {
     "id": 142,
-    "topic": "PWA",
-    "difficulty": "advanced",
-    "question": "manifest.json purpose?",
-    "options": ["Security policy", "Installable app meta", "DNS config", "browser fingerprint"],
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Which property makes text uppercase?",
+    "options": ["font-transform", "text-transform", "case-up", "uppercase()"],
     "answerIndex": 1,
-    "answerText": "Installable app meta",
-    "explanation": "Defines icon, name, theme → PWA install behavior."
+    "answerText": "text-transform",
+    "explanation": "text-transform: uppercase converts letters."
   },
   {
     "id": 143,
-    "topic": "PWA",
-    "difficulty": "advanced",
-    "question": "Workbox helps with?",
-    "options": ["React hydration", "Service Worker caching", "SQL database sync", "CSS variable theming"],
+    "topic": "HTML",
+    "difficulty": "easy",
+    "question": "<strong> means?",
+    "options": ["Italic", "Bold importance", "Underlined", "Muted"],
     "answerIndex": 1,
-    "answerText": "Service Worker caching",
-    "explanation": "Workbox offers caching strategies + routing for SW."
+    "answerText": "Bold importance",
+    "explanation": "Semantic emphasis stronger than <b>."
   },
   {
     "id": 144,
-    "topic": "Accessibility",
-    "difficulty": "advanced",
-    "question": "aria-live='polite' means?",
-    "options": ["Announce immediately", "Announce when idle", "Never announce", "Disable screen reader"],
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Null means?",
+    "options": ["no memory", "empty value", "false", "zero"],
     "answerIndex": 1,
-    "answerText": "Announce when idle",
-    "explanation": "polite delays announcements until user idle."
+    "answerText": "empty value",
+    "explanation": "null = intentional absence of object value."
   },
   {
     "id": 145,
-    "topic": "Accessibility",
-    "difficulty": "advanced",
-    "question": "aria-hidden='true' means?",
-    "options": ["Visible but ignored by screen readers", "Hidden visually", "Removes element entirely", "Free memory"],
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Which property adds outline glow around element?",
+    "options": ["box-shadow", "outline-glow", "text-shadow", "outer-light"],
     "answerIndex": 0,
-    "answerText": "Visible but ignored by screen readers",
-    "explanation": "Visually present but inaccessible → must use wisely."
+    "answerText": "box-shadow",
+    "explanation": "Shadows can simulate element glow."
   },
+
   {
     "id": 146,
-    "topic": "Accessibility",
-    "difficulty": "advanced",
-    "question": "Best semantic element for page-level navigation?",
-    "options": ["header", "nav", "aside", "menu"],
+    "topic": "HTML",
+    "difficulty": "easy",
+    "question": "Which tag shows tooltip on hover?",
+    "options": ["hover='text'", "title attribute", "alt attribute", "notify tag"],
     "answerIndex": 1,
-    "answerText": "nav",
-    "explanation": "nav specifically indicates navigation sections."
+    "answerText": "title attribute",
+    "explanation": "Example: <p title='tooltip'>."
   },
   {
     "id": 147,
-    "topic": "Accessibility",
-    "difficulty": "advanced",
-    "question": "Which attribute improves keyboard accessibility for non-clickable elements?",
-    "options": ["tabindex='0'", "cursor:pointer", "aria-role='clickable'", "transition: focus"],
-    "answerIndex": 0,
-    "answerText": "tabindex='0'",
-    "explanation": "tabindex allows element focus via keyboard → accessible interactions."
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Which checks if array is array?",
+    "options": ["Array.check()", "Array.isArray()", "instanceof Object", "typeof x == array"],
+    "answerIndex": 1,
+    "answerText": "Array.isArray()",
+    "explanation": "Safest way to validate an array."
   },
   {
     "id": 148,
-    "topic": "Animations",
-    "difficulty": "advanced",
-    "question": "requestAnimationFrame is ideal for?",
-    "options": ["Timed events", "UI animation syncing to screen refresh", "Background workers", "Promise chains"],
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Which center text vertically in flex?",
+    "options": ["justify-content:center", "align-items:center", "text-center", "baseline-align"],
     "answerIndex": 1,
-    "answerText": "UI animation syncing to screen refresh",
-    "explanation": "rAF syncs with 60fps display cycles → smooth animations."
+    "answerText": "align-items:center",
+    "explanation": "Cross-axis alignment controls vertical center in rows."
   },
   {
     "id": 149,
-    "topic": "Rendering",
-    "difficulty": "advanced",
-    "question": "Layout thrashing occurs when?",
-    "options": [
-      "Multiple synchronous read/write to DOM layout",
-      "CSS variables used often",
-      "Async fetch finishes late",
-      "Promise chain too long"
-    ],
-    "answerIndex": 0,
-    "answerText": "Multiple synchronous read/write to DOM layout",
-    "explanation": "Reading layout after modifying it forces recalculation repeatedly → costly."
+    "topic": "HTML",
+    "difficulty": "easy",
+    "question": "Which tag breaks paragraph?",
+    "options": ["<break>", "<br>", "<space>", "<bn>"],
+    "answerIndex": 1,
+    "answerText": "<br>",
+    "explanation": "<br> inserts a newline."
   },
   {
     "id": 150,
-    "topic": "Rendering",
-    "difficulty": "advanced",
-    "question": "Which avoids layout thrash?",
-    "options": ["Batch DOM reads then writes", "Mix reads/writes repeatedly", "Use inline event handlers", "Use eval() for rendering"],
-    "answerIndex": 0,
-    "answerText": "Batch DOM reads then writes",
-    "explanation": "Group reads → no reflow chain. Group writes → layout recalculates once."
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Which method merges arrays?",
+    "options": ["a.append(b)", "[...a,...b]", "a+b", "concatArrays()"],
+    "answerIndex": 1,
+    "answerText": "[...a,...b]",
+    "explanation": "Spread syntax merges arrays cleanly."
   },
+
   {
     "id": 151,
-    "topic": "CSS Performance",
-    "difficulty": "advanced",
-    "question": "Which CSS feature boosts rendering by hinting future animations to GPU?",
-    "options": ["filter()", "z-index", "will-change", "overflow"],
-    "answerIndex": 2,
-    "answerText": "will-change",
-    "explanation": "will-change pre-allocates GPU optimization for properties like transform/opacity."
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Which hides element completely?",
+    "options": ["opacity:0", "display:none", "visibility:hidden", "shadow:none"],
+    "answerIndex": 1,
+    "answerText": "display:none",
+    "explanation": "Removes from layout and rendering."
   },
   {
     "id": 152,
-    "topic": "CSS Grid",
-    "difficulty": "advanced",
-    "question": "Which grid property automatically sizes rows based on content?",
-    "options": ["grid-auto-rows", "grid-template-rows", "minmax()", "auto-fill"],
-    "answerIndex": 0,
-    "answerText": "grid-auto-rows",
-    "explanation": "grid-auto-rows controls implicit row height when content overflows defined template."
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "parseInt('12.5') returns?",
+    "options": ["12.5", "12", "13", "undefined"],
+    "answerIndex": 1,
+    "answerText": "12",
+    "explanation": "parseInt truncates decimals."
   },
   {
     "id": 153,
-    "topic": "CSS Transform",
-    "difficulty": "advanced",
-    "question": "transform-origin sets:",
-    "options": ["Perspective", "Pivot point of transform", "Keyframe speed", "Animation easing"],
-    "answerIndex": 1,
-    "answerText": "Pivot point of transform",
-    "explanation": "transform-origin decides rotation/transformation center (default: center)."
+    "topic": "HTML",
+    "difficulty": "easy",
+    "question": "<hr> tag creates?",
+    "options": ["horizontal rule", "highlight", "header row", "half responsive"],
+    "answerIndex": 0,
+    "answerText": "horizontal rule",
+    "explanation": "Used as topic separator line."
   },
   {
     "id": 154,
-    "topic": "CSS Variables",
-    "difficulty": "advanced",
-    "question": "CSS var() fails if?",
-    "options": ["Variable undefined", "Used inside calc()", "Root style changed", "Variable inherited"],
-    "answerIndex": 0,
-    "answerText": "Variable undefined",
-    "explanation": "Undefined variable results in invalid property unless fallback var(--x, value) used."
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Which selector targets all <p> inside <div>?",
+    "options": ["div+p", "div p", "p>div", "div#p"],
+    "answerIndex": 1,
+    "answerText": "div p",
+    "explanation": "Space = descendant selector."
   },
   {
     "id": 155,
-    "topic": "CSS Selectors",
-    "difficulty": "advanced",
-    "question": "Which selector selects input IF parent is hovered?",
-    "options": [".parent:hover input", ":hover + input", "input:hover .parent", ":hover input.parent"],
-    "answerIndex": 0,
-    "answerText": ".parent:hover input",
-    "explanation": "Selector applies to input only when parent has :hover state."
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "typeof [] returns?",
+    "options": ["array", "object", "list", "collection"],
+    "answerIndex": 1,
+    "answerText": "object",
+    "explanation": "Arrays are objects with extra methods."
   },
+
   {
     "id": 156,
-    "topic": "CSS Specificity",
-    "difficulty": "advanced",
-    "question": "Which beats #id?",
-    "options": ["2 classes", "inline style", "5 tag selectors", "universal selector"],
-    "answerIndex": 1,
-    "answerText": "inline style",
-    "explanation": "Inline styles have highest normal specificity (except !important overrides)."
+    "topic": "Mixed",
+    "difficulty": "easy",
+    "question": "Front-end mainly runs in?",
+    "options": ["Browser", "Database", "Kernel", "Backend server"],
+    "answerIndex": 0,
+    "answerText": "Browser",
+    "explanation": "Browser executes HTML/CSS/JS stack."
   },
   {
     "id": 157,
     "topic": "CSS",
-    "difficulty": "advanced",
-    "question": "Which media query detects high DPI (Retina)?",
-    "options": ["(resolution: 72dpi)", "(min-resolution: 2dppx)", "(dpi > 100)", "(pixel-density: retina)"],
-    "answerIndex": 1,
-    "answerText": "(min-resolution: 2dppx)",
-    "explanation": "2dppx = double pixel density → high DPI screens."
+    "difficulty": "easy",
+    "question": "Which defines transparency?",
+    "options": ["opacity", "alpha", "blur", "visibility"],
+    "answerIndex": 0,
+    "answerText": "opacity",
+    "explanation": "0 = invisible, 1 = opaque."
   },
   {
     "id": 158,
-    "topic": "CSS",
-    "difficulty": "advanced",
-    "question": "What does pointer-events: none do?",
-    "options": ["Removes hover/click ability", "Disables reflow", "Sets z-index to top", "Disables focus shadow"],
-    "answerIndex": 0,
-    "answerText": "Removes hover/click ability",
-    "explanation": "Element still visible but can't interact with pointer."
+    "topic": "HTML",
+    "difficulty": "easy",
+    "question": "Which tag groups form inputs?",
+    "options": ["<group>", "<fieldset>", "<formset>", "<input-box>"],
+    "answerIndex": 1,
+    "answerText": "<fieldset>",
+    "explanation": "Often paired with <legend>."
   },
   {
     "id": 159,
-    "topic": "CSS Columns",
-    "difficulty": "advanced",
-    "question": "column-count: 3 means:",
-    "options": ["3 rows", "3 flex items", "Content split into 3 vertical columns", "3 container grids"],
-    "answerIndex": 2,
-    "answerText": "Content split into 3 vertical columns",
-    "explanation": "Multi-column layout automatically balances content across column count."
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "console.log(Boolean('Hello'))?",
+    "options": ["false", "true", "undefined", "0"],
+    "answerIndex": 1,
+    "answerText": "true",
+    "explanation": "Non-empty string is truthy."
   },
   {
     "id": 160,
-    "topic": "CSS Masking",
-    "difficulty": "advanced",
-    "question": "mask-image is used to?",
-    "options": ["Crop via alpha-channel", "Blur the background", "Hide overflow", "Clip border shapes"],
-    "answerIndex": 0,
-    "answerText": "Crop via alpha-channel",
-    "explanation": "Mask applies transparency-based shape cropping."
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Which formats transitions?",
+    "options": ["animation", "effect", "transition", "flow"],
+    "answerIndex": 2,
+    "answerText": "transition",
+    "explanation": "transition-duration + properties animate."
   },
+
   {
     "id": 161,
-    "topic": "JavaScript Engine",
-    "difficulty": "advanced",
-    "question": "Which JS engine powers Chrome?",
-    "options": ["SpiderMonkey", "V8", "Nashorn", "Chakra"],
-    "answerIndex": 1,
-    "answerText": "V8",
-    "explanation": "Chrome + Node use Google V8 engine."
+    "topic": "HTML",
+    "difficulty": "medium",
+    "question": "input[type='password'] masks characters using?",
+    "options": ["unicode", "asterisk mask", "browser UI", "CSS shadow"],
+    "answerIndex": 2,
+    "answerText": "browser UI",
+    "explanation": "Mask symbol rendering is browser defined."
   },
   {
     "id": 162,
-    "topic": "JavaScript Execution",
-    "difficulty": "advanced",
-    "question": "JS is single-threaded but async possible because of?",
-    "options": ["GPU", "Event Loop + Callback Queue", "CSS Renderer", "JSON Parser"],
-    "answerIndex": 1,
-    "answerText": "Event Loop + Callback Queue",
-    "explanation": "Browser handles async tasks, event loop executes queued callbacks later."
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Which selector has highest power?",
+    "options": [".class", "*", "#id", "tag"],
+    "answerIndex": 2,
+    "answerText": "#id",
+    "explanation": "ID > class > tag > universal."
   },
   {
     "id": 163,
-    "topic": "JavaScript Scope",
-    "difficulty": "advanced",
-    "question": "Closures capture:",
-    "options": ["Only global", "Variables of outer scope even after function exits", "Only local lexical vars", "Only DOM elements"],
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Destructuring extracts?",
+    "options": ["DOM nodes", "Object values into variables", "Files", "CSS classes"],
     "answerIndex": 1,
-    "answerText": "Variables of outer scope even after function exits",
-    "explanation": "Closure holds reference, not static copy → persisted memory."
+    "answerText": "Object values into variables",
+    "explanation": "const {x}=obj pulls property."
   },
   {
     "id": 164,
-    "topic": "JavaScript Memory",
-    "difficulty": "advanced",
-    "question": "Garbage collection frees:",
-    "options": ["All unused primitives only", "Objects with no reachable references", "Variables still in scope", "Event listeners only"],
-    "answerIndex": 1,
-    "answerText": "Objects with no reachable references",
-    "explanation": "GC removes unreachable heap allocations, reference-based logic."
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Which unit scales by viewport height?",
+    "options": ["vh", "em", "rem", "%h"],
+    "answerIndex": 0,
+    "answerText": "vh",
+    "explanation": "1vh = 1% of viewport height."
   },
   {
     "id": 165,
-    "topic": "JavaScript Operators",
-    "difficulty": "advanced",
-    "question": "console.log([] + []) = ?",
-    "options": ["[]", "\"\"", "NaN", "undefined"],
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Which method finds index of element?",
+    "options": ["index()", "findIndex()", "search()", "filter()"],
     "answerIndex": 1,
-    "answerText": "\"\"",
-    "explanation": "Array + array → toString → '' + '' = ''."
+    "answerText": "findIndex()",
+    "explanation": "findIndex returns first matching index."
   },
+
   {
     "id": 166,
-    "topic": "JavaScript Comparison",
-    "difficulty": "advanced",
-    "question": "console.log([] == ![]) gives?",
-    "options": ["true", "false", "NaN", "ReferenceError"],
-    "answerIndex": 0,
-    "answerText": "true",
-    "explanation": "![] = false → [] == false → '' == false → 0 == 0 => true."
+    "topic": "HTML",
+    "difficulty": "medium",
+    "question": "SVG stands for?",
+    "options": ["Stylish Vector Graphics", "Scalable Vector Graphics", "Static Visual Gaps", "Stroke Vector Grid"],
+    "answerIndex": 1,
+    "answerText": "Scalable Vector Graphics",
+    "explanation": "SVG is resolution-independent."
   },
   {
     "id": 167,
-    "topic": "JavaScript Promise",
-    "difficulty": "advanced",
-    "question": "async function returns?",
-    "options": ["undefined", "Promise", "Object", "Callback"],
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "flex-wrap allows?",
+    "options": ["overflow hidden", "multi-row wrapping", "grid mode", "no children"],
     "answerIndex": 1,
-    "answerText": "Promise",
-    "explanation": "Even if returning primitives, real return = Promise.resolve(value)."
+    "answerText": "multi-row wrapping",
+    "explanation": "Items wrap to next row when space runs out."
   },
   {
     "id": 168,
-    "topic": "JavaScript Performance",
-    "difficulty": "advanced",
-    "question": "Best way to filter large array?",
-    "options": ["forEach + push", "filter()", "map()", "reduce()"],
-    "answerIndex": 1,
-    "answerText": "filter()",
-    "explanation": "Native filter optimized in C++ under engine, faster than manual loops usually."
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "async function returns automatically?",
+    "options": ["value", "JSON", "Promise", "Generator"],
+    "answerIndex": 2,
+    "answerText": "Promise",
+    "explanation": "Even return primitives become resolved Promise."
   },
   {
     "id": 169,
-    "topic": "JavaScript Fetch API",
-    "difficulty": "advanced",
-    "question": "response.json() returns?",
-    "options": ["JSON raw text", "Promise that resolves parsed JSON", "XHR object", "Binary stream"],
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": ":not(selector) does?",
+    "options": ["select same", "exclude selector", "duplicate element", "animation toggle"],
     "answerIndex": 1,
-    "answerText": "Promise that resolves parsed JSON",
-    "explanation": "json() is async → you must await or .then() it."
+    "answerText": "exclude selector",
+    "explanation": "Filters elements NOT matching given rule."
   },
   {
     "id": 170,
-    "topic": "JavaScript Error Handling",
-    "difficulty": "advanced",
-    "question": "Which catches BOTH sync + async errors cleanly?",
-    "options": [
-      "try/catch inside async with await",
-      ".then().catch() only",
-      "try {promise.then()} catch()",
-      "throw outside async"
-    ],
-    "answerIndex": 0,
-    "answerText": "try/catch inside async with await",
-    "explanation": "await converts promise rejection into catchable error inside try/catch."
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Object.values() returns?",
+    "options": ["keys", "values", "entries", "map"],
+    "answerIndex": 1,
+    "answerText": "values",
+    "explanation": "Same order as object enumeration."
   },
+
   {
     "id": 171,
-    "topic": "DOM",
-    "difficulty": "advanced",
-    "question": "Which returns LIVE HTMLCollection?",
-    "options": ["querySelectorAll()", "getElementById()", "getElementsByClassName()", "closest()"],
-    "answerIndex": 2,
-    "answerText": "getElementsByClassName()",
-    "explanation": "HTMLCollection updates automatically if DOM changes."
+    "topic": "HTML",
+    "difficulty": "medium",
+    "question": "iframe embeds?",
+    "options": ["script only", "external web page", "images only", "form only"],
+    "answerIndex": 1,
+    "answerText": "external web page",
+    "explanation": "Used for maps, players, external content."
   },
   {
     "id": 172,
-    "topic": "DOM",
-    "difficulty": "advanced",
-    "question": "textContent vs innerText?",
-    "options": [
-      "Same always",
-      "innerText respects CSS visibility; textContent doesn't",
-      "textContent trims spaces",
-      "innerText faster always"
-    ],
-    "answerIndex": 1,
-    "answerText": "innerText respects CSS visibility; textContent doesn't",
-    "explanation": "textContent returns raw text; innerText triggers layout + respects display."
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "gap works in?",
+    "options": ["flex + grid", "inline", "absolute", "block only"],
+    "answerIndex": 0,
+    "answerText": "flex + grid",
+    "explanation": "Gap unify spacing in layout modules."
   },
   {
     "id": 173,
-    "topic": "DOM Manipulation",
-    "difficulty": "advanced",
-    "question": "fastest way to insert many DOM nodes?",
-    "options": ["innerHTML in loop", "insertAdjacentHTML()", "DocumentFragment batching", "appendChild 1000 times"],
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Which freezes object deeply?",
+       "options": ["Object.freeze()", "deepFreeze()", "No native deep freeze", "lock()"],
     "answerIndex": 2,
-    "answerText": "DocumentFragment batching",
-    "explanation": "Fragment writes once → minimal repaint/reflow."
+    "answerText": "No native deep freeze",
+    "explanation": "Need recursion or libs to freeze nested objects."
   },
   {
     "id": 174,
-    "topic": "DOM Events",
-    "difficulty": "advanced",
-    "question": "event.stopImmediatePropagation does?",
-    "options": [
-      "Stops only bubbling",
-      "Stops this + prevents next listeners at same level",
-      "Stops capturing only",
-      "Pauses event loop"
-    ],
+    "topic": "Mixed",
+    "difficulty": "medium",
+    "question": "Accessibility for color-blind users improved using?",
+    "options": ["Only bright colors", "High contrast scheme", "Blur", "Opacity low"],
     "answerIndex": 1,
-    "answerText": "Stops this + prevents next listeners at same level",
-    "explanation": "stopPropagation blocks bubble only. stopImmediate blocks same-node next handlers too."
+    "answerText": "High contrast scheme",
+    "explanation": "Contrast ratios matter for WCAG compliance."
   },
   {
     "id": 175,
-    "topic": "DOM",
-    "difficulty": "advanced",
-    "question": "dataset.user converts to?",
-    "options": ["data-user attribute", "ARIA property", "cookie name", "session key"],
-    "answerIndex": 0,
-    "answerText": "data-user attribute",
-    "explanation": "dataset maps to data-* attributes (# data-user → dataset.user)."
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "fetch() returns?",
+    "options": ["XHR", "Promise<Response>", "DOM", "Socket"],
+    "answerIndex": 1,
+    "answerText": "Promise<Response>",
+    "explanation": "Use response.json() or .text() to extract body."
   },
+
   {
     "id": 176,
-    "topic": "Browser",
-    "difficulty": "advanced",
-    "question": "Critical Rendering Path includes:",
-    "options": ["HTML → CSSOM → Render → Paint", "CSS → HTML → Paint", "JS → Render only", "DOM skips CSS"],
-    "answerIndex": 0,
-    "answerText": "HTML → CSSOM → Render → Paint",
-    "explanation": "DOM + CSSOM merge → Render Tree → Layout → Paint."
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "clamp(min, val, max) used to?",
+    "options": ["Force max size only", "Scale responsive values", "Disable animations", "Convert px→rem"],
+    "answerIndex": 1,
+    "answerText": "Scale responsive values",
+    "explanation": "Maintains within min/max range."
   },
   {
     "id": 177,
-    "topic": "Browser",
-    "difficulty": "advanced",
-    "question": "Repaint occurs when:",
-    "options": ["layout changes", "only visuals change like color", "DOM nodes removed always", "transition stops"],
+    "topic": "HTML",
+    "difficulty": "medium",
+    "question": "data-* attributes store?",
+    "options": ["JS code", "Custom data", "CSS styling", "DOM nodes"],
     "answerIndex": 1,
-    "answerText": "only visuals change like color",
-    "explanation": "Reflow triggers repaint but repaint can happen independently of layout."
+    "answerText": "Custom data",
+    "explanation": "Access via element.dataset.property."
   },
   {
     "id": 178,
-    "topic": "Browser Storage",
-    "difficulty": "advanced",
-    "question": "IndexedDB is best for:",
-    "options": ["Small flags only", "Persistent structured data", "Cookies replacement only", "One-time session"],
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "reduce() used for?",
+    "options": ["filter array", "sum/accumulate values", "slice array", "sort only"],
     "answerIndex": 1,
-    "answerText": "Persistent structured data",
-    "explanation": "IndexedDB supports large NoSQL-like storage clientside."
+    "answerText": "sum/accumulate values",
+    "explanation": "reduce builds single output from array sequence."
   },
   {
     "id": 179,
-    "topic": "Web APIs",
-    "difficulty": "advanced",
-    "question": "Which API tracks scroll performance?",
-    "options": ["ScrollMemory()", "IntersectionObserver", "requestIdleCallback", "PerformanceObserver"],
-    "answerIndex": 3,
-    "answerText": "PerformanceObserver",
-    "explanation": "Observes metrics like long tasks, event lag → scroll jank tracking."
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Which places element relative to nearest ancestor?",
+    "options": ["absolute", "fixed", "static", "none"],
+    "answerIndex": 0,
+    "answerText": "absolute",
+    "explanation": "absolute looks for nearest positioned parent."
   },
   {
     "id": 180,
-    "topic": "Web APIs",
-    "difficulty": "advanced",
-    "question": "IntersectionObserver useful for?",
-    "options": ["Detect element visibility", "Network load control", "CSS variables", "URL rewrite"],
-    "answerIndex": 0,
-    "answerText": "Detect element visibility",
-    "explanation": "Used for lazy loading, infinite scroll visibility triggers."
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "What is prototype chain?",
+    "options": ["const scope", "method inheritance path", "node tree", "promise queue"],
+    "answerIndex": 1,
+    "answerText": "method inheritance path",
+    "explanation": "Objects inherit from parent prototypes."
   },
+
+
   {
     "id": 181,
-    "topic": "PWA",
-    "difficulty": "advanced",
-    "question": "Offline support requires?",
-    "options": ["localStorage only", "Service Worker cache", "HTTPS bypass", "iframe sandbox"],
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "contain:strict isolates?",
+    "options": ["style only", "layout + paint + size", "no effect", "colors only"],
     "answerIndex": 1,
-    "answerText": "Service Worker cache",
-    "explanation": "SW intercept network and cache → offline capability."
+    "answerText": "layout + paint + size",
+    "explanation": "Great for performance isolation."
   },
   {
     "id": 182,
-    "topic": "CORS",
-    "difficulty": "advanced",
-    "question": "Access-Control-Allow-Origin allows:",
-    "options": ["Cross-site scripting", "Cross-site valid requests", "CSRF block", "DNS override"],
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "BigInt used when?",
+    "options": ["short ints", "large integer beyond 2^53", "float only", "console only"],
     "answerIndex": 1,
-    "answerText": "Cross-site valid requests",
-    "explanation": "CORS header decides which origins can access resources."
+    "answerText": "large integer beyond 2^53",
+    "explanation": "Normal number loses precision beyond limit."
   },
   {
     "id": 183,
-    "topic": "HTTP",
-    "difficulty": "advanced",
-    "question": "HTTP/2 improves by?",
-    "options": ["Single request only", "Multiplexing streams", "Blocking head-of-line", "No TLS"],
+    "topic": "HTML",
+    "difficulty": "hard",
+    "question": "SameSite cookies prevent?",
+    "options": ["CORS", "CSRF attacks", "storage clearing", "service worker install"],
     "answerIndex": 1,
-    "answerText": "Multiplexing streams",
-    "explanation": "Parallel streams through one TCP connection."
+    "answerText": "CSRF attacks",
+    "explanation": "Restricts third-party requests sending cookies."
   },
   {
     "id": 184,
-    "topic": "HTTP",
-    "difficulty": "advanced",
-    "question": "304 Not Modified means?",
-    "options": ["Resource deleted", "Use cached version", "Bad request", "Server shutdown"],
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Subgrid resolves?",
+    "options": ["flex gap", "nested grid alignment", "opacity flicker", "margin collapse"],
     "answerIndex": 1,
-    "answerText": "Use cached version",
-    "explanation": "Client cache allowed to serve without re-download."
+    "answerText": "nested grid alignment",
+    "explanation": "Enables children to inherit parent grid lines."
   },
   {
     "id": 185,
-    "topic": "HTTP",
-    "difficulty": "advanced",
-    "question": "HTTP 429 meaning?",
-    "options": ["Unauthorized", "Too many requests rate limit", "Proxy required", "No content"],
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Atomics used in?",
+    "options": ["single thread", "shared memory concurrency", "animation only", "localStorage"],
     "answerIndex": 1,
-    "answerText": "Too many requests rate limit",
-    "explanation": "429 indicates throttling → retry later."
+    "answerText": "shared memory concurrency",
+    "explanation": "Works alongside SharedArrayBuffer."
   },
+
   {
     "id": 186,
-    "topic": "Forms",
-    "difficulty": "advanced",
-    "question": "input type=number step='0.1' means?",
-    "options": ["Only integers", "Decimal increments allowed", "Auto.round", "Value random"],
+    "topic": "Mixed",
+    "difficulty": "hard",
+    "question": "PWAs require?",
+    "options": ["SVG only", "Service Worker + Manifest.json", "HTTPS disabled", "localStorage only"],
     "answerIndex": 1,
-    "answerText": "Decimal increments allowed",
-    "explanation": "Allows 0.1,0.2 increments via UI stepper."
+    "answerText": "Service Worker + Manifest.json",
+    "explanation": "Enables offline + installable app behavior."
   },
   {
     "id": 187,
-    "topic": "Forms",
-    "difficulty": "advanced",
-    "question": "pattern attribute validates using:",
-    "options": ["RegEx", "JSON", "SQL", "C++ parser"],
-    "answerIndex": 0,
-    "answerText": "RegEx",
-    "explanation": "pattern enforces regex-based client validation."
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "line-clamp uses?",
+    "options": ["grid", "flex", "webkit-box + overflow hidden", "outline"],
+    "answerIndex": 2,
+    "answerText": "-webkit-box + overflow hidden",
+    "explanation": "CSS spec evolving, clamping widely uses WebKit syntax."
   },
   {
     "id": 188,
-    "topic": "Forms",
-    "difficulty": "advanced",
-    "question": "Which submits form automatically on value change?",
-    "options": ["input", "autosubmit", "formmethod", "onchange + submit()"],
-    "answerIndex": 3,
-    "answerText": "onchange + submit()",
-    "explanation": "Manual handler or JS needed, no native autosubmit."
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Intl API handles?",
+    "options": ["Styling", "International formatting", "Audio processing", "Routing"],
+    "answerIndex": 1,
+    "answerText": "International formatting",
+    "explanation": "Currency, time, language locales."
   },
   {
     "id": 189,
-    "topic": "WebSockets",
-    "difficulty": "advanced",
-    "question": "WebSocket.close() sends:",
-    "options": ["Immediate termination without code", "Close frame to peer", "404 header", "Ping only"],
-    "answerIndex": 1,
-    "answerText": "Close frame to peer",
-    "explanation": "Graceful closing sends closing handshake."
+    "topic": "HTML",
+    "difficulty": "hard",
+    "question": "progress element displays?",
+    "options": ["loading %", "video", "canvas", "table"],
+    "answerIndex": 0,
+    "answerText": "loading %",
+    "explanation": "<progress value=3 max=10>."
   },
   {
     "id": 190,
-    "topic": "Service Worker",
-    "difficulty": "advanced",
-    "question": "Cache-first strategy means?",
-    "options": ["Always fetch network first", "Serve cached response, fallback to network", "Disable offline", "Prefetch only"],
-    "answerIndex": 1,
-    "answerText": "Serve cached response, fallback to network",
-    "explanation": "Good for static assets: fast load, minimal network calls."
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "CSS painting API used for?",
+    "options": ["custom draw backgrounds", "JS threading", "preload fonts", "cache DOM"],
+    "answerIndex": 0,
+    "answerText": "custom draw backgrounds",
+    "explanation": "part of Houdini enabling programmatic rendering."
   },
+
   {
     "id": 191,
-    "topic": "Service Worker",
-    "difficulty": "advanced",
-    "question": "self.skipWaiting() does?",
-    "options": ["Clears all caches", "Activates new service worker immediately", "Stops fetch events", "Switches protocol"],
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "sessionStorage lasts until?",
+    "options": ["device restart", "tab close", "hour", "manual delete only"],
     "answerIndex": 1,
-    "answerText": "Activates new service worker immediately",
-    "explanation": "Without skipWaiting, old worker must finish before replacing."
+    "answerText": "tab close",
+    "explanation": "Clears when browsing session ends."
   },
   {
     "id": 192,
-    "topic": "Service Worker",
-    "difficulty": "advanced",
-    "question": "clients.claim() means?",
-    "options": [
-      "SW controls open tabs instantly",
-      "Clear cache keys",
-      "Claim idle memory",
-      "Kill threads"
-    ],
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Prefer transform for animations because?",
+    "options": ["lower CPU layout cost", "higher reflow", "blocks parsing", "GPU ignored"],
     "answerIndex": 0,
-    "answerText": "SW controls open tabs instantly",
-    "explanation": "Skip waiting + clients.claim gives instant SW takeover."
+    "answerText": "lower CPU layout cost",
+    "explanation": "Doesn’t cause reflow like width/height changes."
   },
   {
     "id": 193,
-    "topic": "Web Performance",
-    "difficulty": "advanced",
-    "question": "Largest Contentful Paint (LCP) measures:",
-    "options": ["JS execution longest time", "Main visible content load time", "Full scroll speed", "Number of DOM nodes"],
+    "topic": "HTML",
+    "difficulty": "medium",
+    "question": "preload hint tells browser?",
+    "options": ["minify css", "download resource early", "animate page", "limit bandwidth"],
     "answerIndex": 1,
-    "answerText": "Main visible content load time",
-    "explanation": "LCP tracks time until main element visually ready."
+    "answerText": "download resource early",
+    "explanation": "Helpful for fonts & critical JS."
   },
   {
     "id": 194,
-    "topic": "Web Performance",
-    "difficulty": "advanced",
-    "question": "CLS (Cumulative Layout Shift) should be:",
-    "options": ["High", "Low", "0.9 recommended", "Ignored"],
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "requestAnimationFrame runs at?",
+    "options": ["fixed speed", "next paint frame ~60fps", "once per second", "no UI thread"],
     "answerIndex": 1,
-    "answerText": "Low",
-    "explanation": "CLS measures layout jumps → lower = more stable UI."
+    "answerText": "next paint frame ~60fps",
+    "explanation": "Ideal for animations synced to display."
   },
   {
     "id": 195,
-    "topic": "Optimization",
-    "difficulty": "advanced",
-    "question": "Minification removes?",
-    "options": ["Functionality", "Whitespace/comments", "HTTP headers", "Promises"],
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "To avoid CLS use?",
+    "options": ["no images", "set width & height", "JS only", "border fix"],
     "answerIndex": 1,
-    "answerText": "Whitespace/comments",
-    "explanation": "Shrinks code without altering logic."
+    "answerText": "set width & height",
+    "explanation": "Prevents layout shifts."
   },
+
   {
     "id": 196,
-    "topic": "Optimization",
-    "difficulty": "advanced",
-    "question": "Preloading fonts improves?",
-    "options": ["SEO only", "Initial paint speed", "Color accuracy", "DOM depth"],
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "debounce used for?",
+    "options": ["instant input", "limit rapid calls", "increase CPU", "block UI"],
     "answerIndex": 1,
-    "answerText": "Initial paint speed",
-    "explanation": "Rel=preload avoids FOIT/FOUT delays."
+    "answerText": "limit rapid calls",
+    "explanation": "Runs after delay of last trigger."
   },
   {
     "id": 197,
-    "topic": "Optimization",
-    "difficulty": "advanced",
-    "question": "Tree shaking requires?",
-    "options": ["CommonJS require()", "ES module import/export", "XHR", "eval()"],
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "CSS custom properties stored in?",
+    "options": ["HTML", ":root", "DOM only", "RAM only"],
     "answerIndex": 1,
-    "answerText": "ES module import/export",
-    "explanation": "Static imports allow dead code removal by bundlers."
+    "answerText": ":root",
+    "explanation": ":root makes global CSS vars."
   },
   {
     "id": 198,
-    "topic": "Security",
-    "difficulty": "advanced",
-    "question": "XSS mainly exploits:",
-    "options": ["Server file I/O", "Unchecked user HTML/JS injection", "DNS crawling", "GPU rendering"],
-    "answerIndex": 1,
-    "answerText": "Unchecked user HTML/JS injection",
-    "explanation": "XSS executes hostile JS in victim browser."
+    "topic": "HTML",
+    "difficulty": "medium",
+    "question": "prefetch hints browser to?",
+    "options": ["download next page resources", "animate", "minify html", "ignore cache"],
+    "answerIndex": 0,
+    "answerText": "download next page resources",
+    "explanation": "Used for predictive page navigation."
   },
   {
     "id": 199,
-    "topic": "Security",
-    "difficulty": "advanced",
-    "question": "CSRF targets:",
-    "options": ["Session actions without user intent", "Database corruption only", "browser local cache", "Only GET requests"],
-    "answerIndex": 0,
-    "answerText": "Session actions without user intent",
-    "explanation": "CSRF forces authenticated user to perform unwanted request."
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "throttle vs debounce difference?",
+    "options": ["no diff", "throttle steady rate, debounce delay final call", "both cancel", "JS error"],
+    "answerIndex": 1,
+    "answerText": "throttle steady rate, debounce delay final call",
+    "explanation": "Throttle ensures periodic; debounce waits inactivity."
   },
   {
     "id": 200,
-    "topic": "Security",
-    "difficulty": "advanced",
-    "question": "Best defense against CSRF?",
-    "options": ["CORS", "SameSite cookies + CSRF token", "Minify HTML", "DNS prefetch"],
+    "topic": "Mixed",
+    "difficulty": "medium",
+    "question": "Core of frontend triad?",
+    "options": ["JS only", "HTML + CSS + JS", "Python + DOM", "Canvas + WebGL"],
     "answerIndex": 1,
-    "answerText": "SameSite cookies + CSRF token",
-    "explanation": "CSRF token + SameSite prevents blind authenticated requests."
+    "answerText": "HTML + CSS + JS",
+    "explanation": "All three equally fundamental."
   }
 ]
