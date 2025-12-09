@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Insane Quiz UI</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root{
+    --accent:#00FFC6;
+    --wrong:#FF335E;
+    --txt:#ffffff;
+}
+
+/* ======= BACKGROUND ======= */
+body{
+    font-family:"Poppins",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+    margin:0;
+    overflow:hidden;
+    color:var(--txt);
+    background:radial-gradient(circle at top,#ff00e6 0,#180018 45%,#000 100%);
+    background-size:200% 200%;
+    animation:bgwave 9s infinite alternate ease-in-out;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    min-height:100vh;
+}
+@keyframes bgwave{
+    0%{background-position:0% 20%;}
+    100%{background-position:100% 80%;}
+}
+
+/* particle canvas */
+#particles{
+    position:fixed;
+    inset:0;
+    z-index:-1;
+    pointer-events:none;
+}
+
+/* ======= QUIZ CARD ======= */
+#quiz-box{
+    width:720px;
+    max-width:92%;
+    margin-top:60px;
+    padding:40px;
+    border-radius:25px;
+    background:rgba(255,255,255,.10);
+    backdrop-filter:blur(18px);
+    box-shadow:0 0 30px #ff00cc99,0 0 70px #00fff555;
+    animation:pop .4s ease;
+    transition:.35s;
+}
+@keyframes pop{
+    from{transform:scale(.85) translateY(30px);opacity:0;}
+}
+
+/* 3D wobble on click */
+.wobble-card{
+    animation:wobble3d .6s ease;
+}
+@keyframes wobble3d{
+    0%{transform:rotateX(0deg) rotateY(0deg) scale(1);}
+    30%{transform:rotateX(6deg) rotateY(-6deg) scale(1.03);}
+    60%{transform:rotateX(-3deg) rotateY(3deg) scale(1.01);}
+    100%{transform:rotateX(0deg) rotateY(0deg) scale(1);}
+}
+
+/* progress bar */
+#progress{
+    width:0%;
+    height:6px;
+    border-radius:999px;
+    margin-bottom:28px;
+    background:linear-gradient(90deg,#00FFC6,#00A6FF,#FF00E6);
+    box-shadow:0 0 10px #00ffe0aa;
+    transition:width .5s cubic-bezier(.2,.85,.35,1.25);
+}
+
+/* question */
+#q-text{
+    font-size:24px;
+    font-weight:700;
+    margin-bottom:30px;
+    text-shadow:0 0 10px #00ffff88;
+    line-height:1.45;
+}
+
+/* ===== OPTIONS (mouse-origin ripple, goo bounce, trails) ===== */
+.option{
+    padding:16px 20px;
+    margin:14px 0;
+    border-radius:15px;
+    background:rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.28);
+    font-size:17px;
+    cursor:pointer;
+    position:relative;
+    overflow:hidden;
+    user-select:none;
+    transition:transform .25s, box-shadow .25s;
+    z-index:1;
+}
+.option:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 22px #00fff799;
+}
+
+/* ripple from mouse position */
+.option::before{
+    content:"";
+    position:absolute;
+    top:var(--y);
+    left:var(--x);
+    width:0;
+    height:0;
+    border-radius:50%;
+    background:radial-gradient(circle,#00ffc68c,#00a6ff7a,#ff00e689);
+    transform:translate(-50%,-50%);
+    transition:width .45s ease,height .45s ease;
+    pointer-events:none;
+    z-index:-1;
+}
+.option.hover-active::before{
+    width:650px;
+    height:650px;
+}
+
+/* extra ripple trails on click */
+.option-ripple{
+    position:absolute;
+    border-radius:50%;
+    background:radial-gradient(circle,rgba(0,255,198,0.7),rgba(0,166,255,0.4),rgba(255,0,230,0));
+    transform:translate(-50%,-50%);
+    pointer-events:none;
+    width:0;
+    height:0;
+    opacity:0.9;
+    animation:rippleTrail .7s ease-out forwards;
+    mix-blend-mode:screen;
+    z-index:0;
+}
+@keyframes rippleTrail{
+    to{
+        width:700px;
+        height:700px;
+        opacity:0;
+    }
+}
+
+/* goo elastic bounce */
+.goo-bounce{
+    animation:gooBounce .6s ease;
+}
+@keyframes gooBounce{
+    0%{transform:scale(1);}
+    35%{transform:scale(0.94,1.06);}
+    65%{transform:scale(1.05,0.96);}
+    100%{transform:scale(1);}
+}
+
+/* answer states */
+.correct{
+    background:#00ffc640!important;
+    border-color:var(--accent)!important;
+    box-shadow:0 0 30px var(--accent)!important;
+}
+.wrong{
+    background:#ff004080!important;
+    border-color:var(--wrong)!important;
+    box-shadow:0 0 30px var(--wrong)!important;
+    animation:shake .35s;
+}
+@keyframes shake{
+    25%{transform:translateX(-8px);}
+    50%{transform:translateX(8px);}
+    75%{transform:translateX(-4px);}
+    100%{transform:translateX(0);}
+}
+
+/* explanation */
+#explanation{
+    display:none;
+    margin-top:20px;
+    padding:16px;
+    background:rgba(255,255,255,.1);
+    border-left:5px solid var(--accent);
+    border-radius:12px;
+    font-size:15px;
+    line-height:1.45;
+    animation:fadeIn .45s ease;
+}
+@keyframes fadeIn{from{opacity:0;}}
+
+/* next button */
+#nextBtn{
+    display:none;
+    margin-top:25px;
+    padding:14px 28px;
+    font-size:18px;
+    font-weight:800;
+    border-radius:14px;
+    border:none;
+    background:linear-gradient(90deg,#00FFC6,#00A6FF,#FF00E6);
+    cursor:pointer;
+    transition:.3s;
+    color:#000;
+}
+#nextBtn:hover{
+    transform:scale(1.12) translateY(-2px);
+    filter:brightness(1.3);
+}
+
+/* result screen */
+#scoreBox{
+    display:none;
+    text-align:center;
+    margin-top:80px;
+}
+#finalScore{
+    font-size:56px;
+    background:linear-gradient(90deg,#00FFC6,#00A6FF,#FF00E6);
+    background-clip:text;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+}
+#restart{
+    margin-top:20px;
+    padding:14px 25px;
+    border-radius:12px;
+    background:#ffffff22;
+    border:1px solid #fff4;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:.35s;
+}
+#restart:hover{
+    transform:scale(1.15);
+    background:#fff4;
+}
+
+/* mobile */
+@media (max-width:600px){
+    #quiz-box{
+        margin-top:40px;
+        padding:26px 18px;
+        border-radius:20px;
+    }
+    #q-text{font-size:19px;}
+    .option{font-size:15px;}
+    #finalScore{font-size:40px;}
+}
+</style>
+</head>
+<body>
+
+<canvas id="particles"></canvas>
+
+<div id="quiz-box">
+    <div id="progress"></div>
+    <h2 id="q-text"></h2>
+    <div id="options"></div>
+    <p id="explanation"></p>
+    <button id="nextBtn">Next →</button>
+</div>
+
+<div id="scoreBox">
+    <h1 id="finalScore"></h1>
+    <button id="restart">Play Again</button>
+</div>
+
+<script src="quiz.js"></script>
+
+</body>
+</html>
