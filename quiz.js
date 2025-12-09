@@ -1,6 +1,6 @@
 let questions = [];
 let index = 0;
-let score = 0;
+let score =  0;
 
 const quizBox      = document.getElementById("quiz-box");
 const qText        = document.getElementById("q-text");
@@ -214,3 +214,4 @@ function initParticles(){
 
 restartBtn.onclick=()=>location.reload();
 loadQuestions();
+
